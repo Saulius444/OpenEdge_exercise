@@ -1,0 +1,26 @@
+
+/*------------------------------------------------------------------------
+    File        : dsOrder.i
+    Purpose     : 
+
+    Syntax      :
+
+    Description : ProDataSet to hold Order records
+
+    Author(s)   : 
+    Created     : Mon Nov 26 10:50:26 EET 2018
+    Notes       :
+  ----------------------------------------------------------------------*/
+  
+/* This code defines a Temp-Table named ttOrder with fields and a unique */
+/* index on OrderNum. It also creates a ProDataSet named dsCust that     */
+/* includes one table, ttCust.                                          */
+
+DEFINE TEMP-TABLE ttOrder NO-UNDO
+
+FIELD Ordernum AS INTEGER LABEL "Ordernum"
+FIELD CustNum  AS INTEGER LABEL "CustNum"
+
+INDEX CustNumIdx  IS UNIQUE PRIMARY CustNum.
+
+DEFINE DATASET dsOrder FOR ttOrder.

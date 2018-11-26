@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<libraryinfo path="C:/Users/Saulius/Desktop/workspace/ProgressTrainingPC" type="PathEntry" ModificationStamp="1543236445082" FullName="ProgressTrainingPC" lib_header_magic_number="2384638594569" lib_header_version="15">
+	<procedures>
+		<relative path="src">
+			<procedure name="RunForm1" SourceFilePath="" RfilePath="C:/Users/Saulius/Desktop/workspace/ProgressTrainingPC/bin/RunForm1.r"></procedure>
+		</relative>
+	</procedures>
+	<classes>
+	</classes>
+</libraryinfo>

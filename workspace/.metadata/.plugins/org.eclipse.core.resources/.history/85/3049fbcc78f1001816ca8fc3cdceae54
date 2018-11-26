@@ -1,0 +1,319 @@
+ 
+ /*------------------------------------------------------------------------
+    File        : infoForm
+    Purpose     : 
+    Syntax      : 
+    Description : 
+    Author(s)   : Saulius
+    Created     : Mon Nov 26 10:28:44 EET 2018
+    Notes       : 
+  ----------------------------------------------------------------------*/
+
+USING Progress.Lang.*.
+USING Progress.Windows.Form.
+
+BLOCK-LEVEL ON ERROR UNDO, THROW.
+
+CLASS infoForm INHERITS Form: 
+    
+    {dsCust.i}
+    {dsOrder.i}
+    {dsOrderLine.i}
+    
+    DEFINE PRIVATE VARIABLE bindingSource1 AS Progress.Data.BindingSource NO-UNDO.
+    DEFINE PRIVATE VARIABLE bindingSource2 AS Progress.Data.BindingSource NO-UNDO.
+    DEFINE PRIVATE VARIABLE bindingSource3 AS Progress.Data.BindingSource NO-UNDO.
+    DEFINE PRIVATE VARIABLE components AS System.ComponentModel.IContainer NO-UNDO.
+    DEFINE PRIVATE VARIABLE DataGridView AS System.Windows.Forms.DataGridView NO-UNDO.
+    DEFINE PRIVATE VARIABLE lineNumDataGridViewTextBoxColumn AS System.Windows.Forms.DataGridViewTextBoxColumn NO-UNDO.
+    DEFINE PRIVATE VARIABLE itemNumDataGridViewTextBoxColumn AS System.Windows.Forms.DataGridViewTextBoxColumn NO-UNDO.
+    DEFINE PRIVATE VARIABLE extendedPriceDataGridViewTextBoxColumn AS System.Windows.Forms.DataGridViewTextBoxColumn NO-UNDO.
+    DEFINE PRIVATE VARIABLE discountDataGridViewTextBoxColumn AS System.Windows.Forms.DataGridViewTextBoxColumn NO-UNDO.
+    DEFINE PRIVATE VARIABLE orderLB AS System.Windows.Forms.ListBox NO-UNDO.
+    DEFINE PRIVATE VARIABLE customerLB AS System.Windows.Forms.ListBox NO-UNDO.
+    DEFINE PRIVATE VARIABLE qtyDataGridViewTextBoxColumn AS System.Windows.Forms.DataGridViewTextBoxColumn NO-UNDO.
+    DEFINE PRIVATE VARIABLE priceDataGridViewTextBoxColumn AS System.Windows.Forms.DataGridViewTextBoxColumn NO-UNDO.
+    DEFINE PRIVATE VARIABLE ordernumDataGridViewTextBoxColumn AS System.Windows.Forms.DataGridViewTextBoxColumn NO-UNDO.
+    DEFINE PRIVATE VARIABLE orderLineStatusDataGridViewTextBoxColumn AS System.Windows.Forms.DataGridViewTextBoxColumn NO-UNDO.
+    
+    /* Define variables for the ABL static query that will read the customer records from the database */
+    DEFINE QUERY qryCust FOR Customer.
+    DEFINE DATA-SOURCE srcCust FOR QUERY qryCust.
+    
+    /* Define variables for the ABL static query that will read the order records from the database */
+    DEFINE QUERY qryOrder FOR Order.
+    DEFINE DATA-SOURCE srcOrder FOR QUERY qryOrder.
+    
+    /* Define variables for the ABL static query that will read the orderLine records from the database */
+    DEFINE QUERY qryOrderLine FOR OrderLine.
+    DEFINE DATA-SOURCE srcOrderLine FOR QUERY qryOrderLine.
+
+        
+    CONSTRUCTOR PUBLIC infoForm (  ):
+        
+        
+        SUPER().
+        InitializeComponent().
+        
+        /* Set the query to read data from the Customer table */
+        QUERY qryCust:QUERY-PREPARE("FOR EACH Customer").
+        BUFFER ttCust:ATTACH-DATA-SOURCE(DATA-SOURCE srcCust:HANDLE).
+        
+        /* Fill the ProDataSet from the OpenEdge database table */
+        DATASET dsCust:FILL().
+        
+        /* Set the ProBindingSource to ProDataSet as the data-source */
+        bindingSource1:Handle = DATASET dsCust:HANDLE.
+        
+        
+        /* Set the query to read data from the Order table */
+        QUERY qryOrder:QUERY-PREPARE("FOR EACH Order").
+        BUFFER ttOrder:ATTACH-DATA-SOURCE(DATA-SOURCE srcOrder:HANDLE).
+        
+        /* Fill the ProDataSet from the OpenEdge database table */
+        DATASET dsOrder:FILL().
+        
+        /* Set the ProBindingSource to ProDataSet as the data-source */
+        bindingSource2:Handle = DATASET dsOrder:HANDLE.
+        
+         
+        /* Set the query to read data from the OrderLine table */
+        QUERY qryOrderLine:QUERY-PREPARE("FOR EACH OrderLine").
+        BUFFER ttOrderLine:ATTACH-DATA-SOURCE(DATA-SOURCE srcOrderLine:HANDLE).
+        
+        /* Fill the ProDataSet from the OpenEdge database table */
+        DATASET dsOrderLine:FILL().
+        
+        /* Set the ProBindingSource to ProDataSet as the data-source */
+        bindingSource3:Handle = DATASET dsOrderLine:HANDLE.
+
+        THIS-OBJECT:ComponentsCollection:ADD(THIS-OBJECT:components).
+        CATCH e AS Progress.Lang.Error:
+            UNDO, THROW e.
+        END CATCH.
+
+    END CONSTRUCTOR.
+
+
+    METHOD PRIVATE VOID InitializeComponent(  ):
+        
+        /* NOTE: The following method is automatically generated.
+        
+        We strongly suggest that the contents of this method only be modified using the
+        Visual Designer to avoid any incompatible modifications.
+        
+        Modifying the contents of this method using a code editor will invalidate any support for this file. */
+        THIS-OBJECT:components = NEW System.ComponentModel.Container().
+        @VisualDesigner.FormMember (NeedsInitialize="true").
+        DEFINE VARIABLE tableDesc25 AS Progress.Data.TableDesc NO-UNDO.
+        tableDesc25 = NEW Progress.Data.TableDesc("ttCust").
+        @VisualDesigner.FormMember (NeedsInitialize="true").
+        DEFINE VARIABLE tableDesc26 AS Progress.Data.TableDesc NO-UNDO.
+        tableDesc26 = NEW Progress.Data.TableDesc("ttOrder").
+        @VisualDesigner.FormMember (NeedsInitialize="true").
+        DEFINE VARIABLE tableDesc27 AS Progress.Data.TableDesc NO-UNDO.
+        tableDesc27 = NEW Progress.Data.TableDesc("ttOrderLine").
+        THIS-OBJECT:customerLB = NEW System.Windows.Forms.ListBox().
+        THIS-OBJECT:bindingSource1 = NEW Progress.Data.BindingSource(THIS-OBJECT:components).
+        THIS-OBJECT:bindingSource2 = NEW Progress.Data.BindingSource(THIS-OBJECT:components).
+        THIS-OBJECT:orderLB = NEW System.Windows.Forms.ListBox().
+        THIS-OBJECT:DataGridView = NEW System.Windows.Forms.DataGridView().
+        THIS-OBJECT:bindingSource3 = NEW Progress.Data.BindingSource(THIS-OBJECT:components).
+        THIS-OBJECT:ordernumDataGridViewTextBoxColumn = NEW System.Windows.Forms.DataGridViewTextBoxColumn().
+        THIS-OBJECT:lineNumDataGridViewTextBoxColumn = NEW System.Windows.Forms.DataGridViewTextBoxColumn().
+        THIS-OBJECT:itemNumDataGridViewTextBoxColumn = NEW System.Windows.Forms.DataGridViewTextBoxColumn().
+        THIS-OBJECT:priceDataGridViewTextBoxColumn = NEW System.Windows.Forms.DataGridViewTextBoxColumn().
+        THIS-OBJECT:qtyDataGridViewTextBoxColumn = NEW System.Windows.Forms.DataGridViewTextBoxColumn().
+        THIS-OBJECT:discountDataGridViewTextBoxColumn = NEW System.Windows.Forms.DataGridViewTextBoxColumn().
+        THIS-OBJECT:extendedPriceDataGridViewTextBoxColumn = NEW System.Windows.Forms.DataGridViewTextBoxColumn().
+        THIS-OBJECT:orderLineStatusDataGridViewTextBoxColumn = NEW System.Windows.Forms.DataGridViewTextBoxColumn().
+        CAST(THIS-OBJECT:bindingSource1, System.ComponentModel.ISupportInitialize):BeginInit().
+        CAST(THIS-OBJECT:bindingSource2, System.ComponentModel.ISupportInitialize):BeginInit().
+        CAST(THIS-OBJECT:DataGridView, System.ComponentModel.ISupportInitialize):BeginInit().
+        CAST(THIS-OBJECT:bindingSource3, System.ComponentModel.ISupportInitialize):BeginInit().
+        THIS-OBJECT:SuspendLayout().
+        /*  */
+        /* customerLB */
+        /*  */
+        THIS-OBJECT:customerLB:DataSource = THIS-OBJECT:bindingSource1.
+        THIS-OBJECT:customerLB:DisplayMember = "Name".
+        THIS-OBJECT:customerLB:FormattingEnabled = TRUE.
+        THIS-OBJECT:customerLB:Location = NEW System.Drawing.Point(24, 39).
+        THIS-OBJECT:customerLB:Name = "customerLB".
+        THIS-OBJECT:customerLB:Size = NEW System.Drawing.Size(177, 173).
+        THIS-OBJECT:customerLB:TabIndex = 0.
+        THIS-OBJECT:customerLB:ValueMember = "CustNum".
+        /*  */
+        /* bindingSource1 */
+        /*  */
+        THIS-OBJECT:bindingSource1:MaxDataGuess = 0.
+        THIS-OBJECT:bindingSource1:NoLOBs = FALSE.
+        THIS-OBJECT:bindingSource1:Position = 0.
+        @VisualDesigner.FormMember (NeedsInitialize="false", InitializeArray="true").
+        DEFINE VARIABLE arrayvar0 AS "Progress.Data.TableDesc[]" NO-UNDO.
+        arrayvar0 = NEW "Progress.Data.TableDesc[]"(0).
+        tableDesc25:ChildTables = arrayvar0.
+        @VisualDesigner.FormMember (NeedsInitialize="false", InitializeArray="true").
+        DEFINE VARIABLE arrayvar1 AS Progress.Data.ColumnPropDesc EXTENT 8 NO-UNDO.
+        arrayvar1[1] = NEW Progress.Data.ColumnPropDesc("CustNum", "Num", Progress.Data.DataType:INTEGER).
+        arrayvar1[2] = NEW Progress.Data.ColumnPropDesc("Name", "Name", Progress.Data.DataType:CHARACTER).
+        arrayvar1[3] = NEW Progress.Data.ColumnPropDesc("Contact", "Contact", Progress.Data.DataType:CHARACTER).
+        arrayvar1[4] = NEW Progress.Data.ColumnPropDesc("Address", "Address", Progress.Data.DataType:CHARACTER).
+        arrayvar1[5] = NEW Progress.Data.ColumnPropDesc("City", "City", Progress.Data.DataType:CHARACTER).
+        arrayvar1[6] = NEW Progress.Data.ColumnPropDesc("State", "State", Progress.Data.DataType:CHARACTER).
+        arrayvar1[7] = NEW Progress.Data.ColumnPropDesc("Country", "Country", Progress.Data.DataType:CHARACTER).
+        arrayvar1[8] = NEW Progress.Data.ColumnPropDesc("CreditLimit", "Credit Limit", Progress.Data.DataType:DECIMAL).
+        tableDesc25:Columns = arrayvar1.
+        THIS-OBJECT:bindingSource1:TableSchema = tableDesc25.
+        /*  */
+        /* bindingSource2 */
+        /*  */
+        THIS-OBJECT:bindingSource2:MaxDataGuess = 0.
+        THIS-OBJECT:bindingSource2:NoLOBs = FALSE.
+        THIS-OBJECT:bindingSource2:Position = 0.
+        @VisualDesigner.FormMember (NeedsInitialize="false", InitializeArray="true").
+        DEFINE VARIABLE arrayvar2 AS "Progress.Data.TableDesc[]" NO-UNDO.
+        arrayvar2 = NEW "Progress.Data.TableDesc[]"(0).
+        tableDesc26:ChildTables = arrayvar2.
+        @VisualDesigner.FormMember (NeedsInitialize="false", InitializeArray="true").
+        DEFINE VARIABLE arrayvar3 AS Progress.Data.ColumnPropDesc EXTENT 8 NO-UNDO.
+        arrayvar3[1] = NEW Progress.Data.ColumnPropDesc("OrderNum", "Num", Progress.Data.DataType:INTEGER).
+        arrayvar3[2] = NEW Progress.Data.ColumnPropDesc("CustNum", "CustomerNr", Progress.Data.DataType:INTEGER).
+        arrayvar3[3] = NEW Progress.Data.ColumnPropDesc("OrderDate", "OrderDate", Progress.Data.DataType:DATE).
+        arrayvar3[4] = NEW Progress.Data.ColumnPropDesc("Address", "Address", Progress.Data.DataType:CHARACTER).
+        arrayvar3[5] = NEW Progress.Data.ColumnPropDesc("City", "City", Progress.Data.DataType:CHARACTER).
+        arrayvar3[6] = NEW Progress.Data.ColumnPropDesc("State", "State", Progress.Data.DataType:CHARACTER).
+        arrayvar3[7] = NEW Progress.Data.ColumnPropDesc("Country", "Country", Progress.Data.DataType:CHARACTER).
+        arrayvar3[8] = NEW Progress.Data.ColumnPropDesc("CreditLimit", "Credit Limit", Progress.Data.DataType:DECIMAL).
+        tableDesc26:Columns = arrayvar3.
+        THIS-OBJECT:bindingSource2:TableSchema = tableDesc26.
+        /*  */
+        /* orderLB */
+        /*  */
+        THIS-OBJECT:orderLB:DataBindings:Add(NEW System.Windows.Forms.Binding("SelectedValue", THIS-OBJECT:bindingSource1, "CustNum", TRUE)).
+        THIS-OBJECT:orderLB:DataSource = THIS-OBJECT:bindingSource2.
+        THIS-OBJECT:orderLB:DisplayMember = "OrderNum".
+        THIS-OBJECT:orderLB:FormattingEnabled = TRUE.
+        THIS-OBJECT:orderLB:Location = NEW System.Drawing.Point(235, 39).
+        THIS-OBJECT:orderLB:Name = "orderLB".
+        THIS-OBJECT:orderLB:Size = NEW System.Drawing.Size(182, 173).
+        THIS-OBJECT:orderLB:TabIndex = 1.
+        THIS-OBJECT:orderLB:ValueMember = "CustNum".
+        /*  */
+        /* DataGridView */
+        /*  */
+        THIS-OBJECT:DataGridView:AllowUserToOrderColumns = TRUE.
+        THIS-OBJECT:DataGridView:AutoGenerateColumns = FALSE.
+        THIS-OBJECT:DataGridView:ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode:AutoSize.
+        @VisualDesigner.FormMember (NeedsInitialize="false", InitializeArray="true").
+        DEFINE VARIABLE arrayvar4 AS System.Windows.Forms.DataGridViewColumn EXTENT 8 NO-UNDO.
+        arrayvar4[1] = THIS-OBJECT:ordernumDataGridViewTextBoxColumn.
+        arrayvar4[2] = THIS-OBJECT:lineNumDataGridViewTextBoxColumn.
+        arrayvar4[3] = THIS-OBJECT:itemNumDataGridViewTextBoxColumn.
+        arrayvar4[4] = THIS-OBJECT:priceDataGridViewTextBoxColumn.
+        arrayvar4[5] = THIS-OBJECT:qtyDataGridViewTextBoxColumn.
+        arrayvar4[6] = THIS-OBJECT:discountDataGridViewTextBoxColumn.
+        arrayvar4[7] = THIS-OBJECT:extendedPriceDataGridViewTextBoxColumn.
+        arrayvar4[8] = THIS-OBJECT:orderLineStatusDataGridViewTextBoxColumn.
+        THIS-OBJECT:DataGridView:Columns:AddRange(arrayvar4).
+        THIS-OBJECT:DataGridView:DataSource = THIS-OBJECT:bindingSource3.
+        THIS-OBJECT:DataGridView:Location = NEW System.Drawing.Point(12, 235).
+        THIS-OBJECT:DataGridView:Name = "DataGridView".
+        THIS-OBJECT:DataGridView:RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode:AutoSizeToDisplayedHeaders.
+        THIS-OBJECT:DataGridView:Size = NEW System.Drawing.Size(868, 150).
+        THIS-OBJECT:DataGridView:TabIndex = 2.
+        /*  */
+        /* bindingSource3 */
+        /*  */
+        THIS-OBJECT:bindingSource3:MaxDataGuess = 0.
+        THIS-OBJECT:bindingSource3:NoLOBs = FALSE.
+        THIS-OBJECT:bindingSource3:Position = 0.
+        @VisualDesigner.FormMember (NeedsInitialize="false", InitializeArray="true").
+        DEFINE VARIABLE arrayvar5 AS "Progress.Data.TableDesc[]" NO-UNDO.
+        arrayvar5 = NEW "Progress.Data.TableDesc[]"(0).
+        tableDesc27:ChildTables = arrayvar5.
+        @VisualDesigner.FormMember (NeedsInitialize="false", InitializeArray="true").
+        DEFINE VARIABLE arrayvar6 AS Progress.Data.ColumnPropDesc EXTENT 8 NO-UNDO.
+        arrayvar6[1] = NEW Progress.Data.ColumnPropDesc("Ordernum", "Ordernum", Progress.Data.DataType:INTEGER).
+        arrayvar6[2] = NEW Progress.Data.ColumnPropDesc("LineNum", "LineNum", Progress.Data.DataType:INTEGER).
+        arrayvar6[3] = NEW Progress.Data.ColumnPropDesc("ItemNum", "ItemNum", Progress.Data.DataType:INTEGER).
+        arrayvar6[4] = NEW Progress.Data.ColumnPropDesc("Price", "Price", Progress.Data.DataType:DECIMAL).
+        arrayvar6[5] = NEW Progress.Data.ColumnPropDesc("Qty", "Quantity", Progress.Data.DataType:INTEGER).
+        arrayvar6[6] = NEW Progress.Data.ColumnPropDesc("Discount", "Discount", Progress.Data.DataType:INTEGER).
+        arrayvar6[7] = NEW Progress.Data.ColumnPropDesc("ExtendedPrice", "ExtendedPrice", Progress.Data.DataType:DECIMAL).
+        arrayvar6[8] = NEW Progress.Data.ColumnPropDesc("OrderLineStatus", "OrderLine.OrderLineStatus", Progress.Data.DataType:CHARACTER).
+        tableDesc27:Columns = arrayvar6.
+        THIS-OBJECT:bindingSource3:TableSchema = tableDesc27.
+        /*  */
+        /* ordernumDataGridViewTextBoxColumn */
+        /*  */
+        THIS-OBJECT:ordernumDataGridViewTextBoxColumn:DataPropertyName = "Ordernum".
+        THIS-OBJECT:ordernumDataGridViewTextBoxColumn:HeaderText = "Ordernum".
+        THIS-OBJECT:ordernumDataGridViewTextBoxColumn:Name = "ordernumDataGridViewTextBoxColumn".
+        /*  */
+        /* lineNumDataGridViewTextBoxColumn */
+        /*  */
+        THIS-OBJECT:lineNumDataGridViewTextBoxColumn:DataPropertyName = "LineNum".
+        THIS-OBJECT:lineNumDataGridViewTextBoxColumn:HeaderText = "LineNum".
+        THIS-OBJECT:lineNumDataGridViewTextBoxColumn:Name = "lineNumDataGridViewTextBoxColumn".
+        /*  */
+        /* itemNumDataGridViewTextBoxColumn */
+        /*  */
+        THIS-OBJECT:itemNumDataGridViewTextBoxColumn:DataPropertyName = "ItemNum".
+        THIS-OBJECT:itemNumDataGridViewTextBoxColumn:HeaderText = "ItemNum".
+        THIS-OBJECT:itemNumDataGridViewTextBoxColumn:Name = "itemNumDataGridViewTextBoxColumn".
+        /*  */
+        /* priceDataGridViewTextBoxColumn */
+        /*  */
+        THIS-OBJECT:priceDataGridViewTextBoxColumn:DataPropertyName = "Price".
+        THIS-OBJECT:priceDataGridViewTextBoxColumn:HeaderText = "Price".
+        THIS-OBJECT:priceDataGridViewTextBoxColumn:Name = "priceDataGridViewTextBoxColumn".
+        /*  */
+        /* qtyDataGridViewTextBoxColumn */
+        /*  */
+        THIS-OBJECT:qtyDataGridViewTextBoxColumn:DataPropertyName = "Qty".
+        THIS-OBJECT:qtyDataGridViewTextBoxColumn:HeaderText = "Quantity".
+        THIS-OBJECT:qtyDataGridViewTextBoxColumn:Name = "qtyDataGridViewTextBoxColumn".
+        /*  */
+        /* discountDataGridViewTextBoxColumn */
+        /*  */
+        THIS-OBJECT:discountDataGridViewTextBoxColumn:DataPropertyName = "Discount".
+        THIS-OBJECT:discountDataGridViewTextBoxColumn:HeaderText = "Discount".
+        THIS-OBJECT:discountDataGridViewTextBoxColumn:Name = "discountDataGridViewTextBoxColumn".
+        /*  */
+        /* extendedPriceDataGridViewTextBoxColumn */
+        /*  */
+        THIS-OBJECT:extendedPriceDataGridViewTextBoxColumn:DataPropertyName = "ExtendedPrice".
+        THIS-OBJECT:extendedPriceDataGridViewTextBoxColumn:HeaderText = "ExtendedPrice".
+        THIS-OBJECT:extendedPriceDataGridViewTextBoxColumn:Name = "extendedPriceDataGridViewTextBoxColumn".
+        /*  */
+        /* orderLineStatusDataGridViewTextBoxColumn */
+        /*  */
+        THIS-OBJECT:orderLineStatusDataGridViewTextBoxColumn:DataPropertyName = "OrderLineStatus".
+        THIS-OBJECT:orderLineStatusDataGridViewTextBoxColumn:HeaderText = "OrderLine.OrderLineStatus".
+        THIS-OBJECT:orderLineStatusDataGridViewTextBoxColumn:Name = "orderLineStatusDataGridViewTextBoxColumn".
+        /*  */
+        /* infoForm */
+        /*  */
+        THIS-OBJECT:ClientSize = NEW System.Drawing.Size(892, 397).
+        THIS-OBJECT:Controls:Add(THIS-OBJECT:DataGridView).
+        THIS-OBJECT:Controls:Add(THIS-OBJECT:orderLB).
+        THIS-OBJECT:Controls:Add(THIS-OBJECT:customerLB).
+        THIS-OBJECT:Cursor = System.Windows.Forms.Cursors:Default.
+        THIS-OBJECT:Name = "infoForm".
+        THIS-OBJECT:Text = "Information tab".
+        CAST(THIS-OBJECT:bindingSource1, System.ComponentModel.ISupportInitialize):EndInit().
+        CAST(THIS-OBJECT:bindingSource2, System.ComponentModel.ISupportInitialize):EndInit().
+        CAST(THIS-OBJECT:DataGridView, System.ComponentModel.ISupportInitialize):EndInit().
+        CAST(THIS-OBJECT:bindingSource3, System.ComponentModel.ISupportInitialize):EndInit().
+        THIS-OBJECT:ResumeLayout(FALSE).
+        CATCH e AS Progress.Lang.Error:
+            UNDO, THROW e.
+        END CATCH.
+    END METHOD.
+
+    DESTRUCTOR PUBLIC infoForm ( ):
+
+    END DESTRUCTOR.
+
+END CLASS.

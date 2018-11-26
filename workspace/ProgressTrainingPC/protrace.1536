@@ -1,0 +1,68 @@
+=====================================================
+PROGRESS stack trace as of Mon Nov 26 15:05:25 2018
+=====================================================
+
+Progress OpenEdge Release 11.7 build 1388 on WINNT 
+
+Startup parameters:
+-pf C:\Progress\OpenEdge\startup.pf,-cpinternal ISO8859-1,-cpstream ISO8859-1,-cpcoll Basic,-cpcase Basic,-d mdy,-numsep 44,-numdec 46,(end .pf),-s 200,-mmax 65534,-T C:/OpenEdge/WRK,-preloadCLR,-db sport.db,-H localhost,-S 5679,-debugalert,-rereadnolock,-inp 16000,-tok 4000,-nosplash,-p C:\Progress\OpenEdge\oeide\eclipse\plugins\com.openedge.pdt.debug.core_11.7.0.00\abl\_debuglauncher.p
+
+Exception code: E0434352 
+Fault address:  00007FF83527A388 01:0000000000039388 C:\WINDOWS\System32\KERNELBASE.dll
+
+Registers:
+RAX:00007FF81F9E5000
+RBX:0000000000000001
+RCX:0000000000000000
+RDX:0007689C00000000
+RSI:000000C8DCAFB8C8
+RDI:0000000000000005
+R8 :0000000000000000
+R9 :0000000000000272
+R10:000000003527A000
+R11:00007FF835240000
+R12:0000000000000080
+R13:00000000000B7000
+R14:0000002000001000
+R15:0000000001000000
+CS:RIP:0033:00007FF83527A388
+SS:RSP:002B:000000C8DCAFB750  RBP:0000000000000001
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00000202
+
+
+Debugging dll: C:\Progress\OpenEdge\bin\DBGHELP.DLL
+Symbol Path:
+ C:\Progress\OpenEdge\bin;C:\Progress\OpenEdge\pdbfiles
+
+
+Call Stack:
+Address           Frame
+00007FF83527A388  000000C8DCAFB820  RaiseException+68
+00007FF81F0DA83A  000000C8DCAFB920  DllRegisterServerInternal+3079A
+00007FF81F4C1413  000000C8DCAFB970  TranslateSecurityAttributes+26EC3
+00007FF81F51E6C1  000000C8DCAFBAE0  TranslateSecurityAttributes+84171
+00007FF81F23C918  000000C8DCAFBB10  PreBindAssemblyEx+43728
+00007FF73FD40BDC  000000C8DCAFBB18  0000:0000000000000000 
+0000000000000008  000000C8DCAFBB20  0000:0000000000000000 
+0000022C3CCF6590  000000C8DCAFBB28  0000:0000000000000000 
+
+
+** ABL Stack Trace **
+
+--> C:\Users\Saulius\Desktop\workspace\.metadata\.plugins\com.openedge.pdt.project\temp.dir\RunClass-infoForm-3377647364145259140.p at line 8  (C:\Users\Saulius\Desktop\workspace\.metadata\.plugins\com.openedge.pdt.project\temp.dir\RunClass-infoForm-3377647364145259140.p)
+    adecomm/_runcode.p at line 671  (adecomm/_runcode.r)
+    C:\Progress\OpenEdge\oeide\eclipse\plugins\com.openedge.pdt.debug.core_11.7.0.00\abl\_debuglauncher.p at line 100  (C:\Progress\OpenEdge\oeide\eclipse\plugins\com.openedge.pdt.debug.core_11.7.0.00\abl\_debuglauncher.p)
+
+** Persistent procedures/Classes **
+
+Handle  File Name
+001004  C:\Users\Saulius\Desktop\workspace\ProgressTrainingPC\src\infoForm.cls
+
+** PROPATH **
+C:\Users\Saulius\Desktop\workspace\ProgressTrainingPC\src,C:\Users\Saulius\Desktop\workspace\ProgressTrainingPC,C:\Progress\OpenEdge\gui\,C:\Progress\OpenEdge\gui\adecomm.pl,C:\Progress\OpenEdge\gui\adecomp.pl,C:\Progress\OpenEdge\gui\adedict.pl,C:\Progress\OpenEdge\gui\adeedit.pl,C:\Progress\OpenEdge\gui\adeicon.pl,C:\Progress\OpenEdge\gui\adeshar.pl,C:\Progress\OpenEdge\gui\adeuib.pl,C:\Progress\OpenEdge\gui\adeweb.pl,C:\Progress\OpenEdge\gui\adexml.pl,C:\Progress\OpenEdge\gui\dataadmin.pl,C:\Progress\OpenEdge\gui\prodict.pl,C:\Progress\OpenEdge\gui\protools.pl,C:\Progress\OpenEdge\gui\OpenEdge.Core.pl,C:\Progress\OpenEdge\gui\OpenEdge.BusinessLogic.pl,C:\Progress\OpenEdge\gui\netlib\OpenEdge.Net.pl,C:\Progress\OpenEdge,C:\Progress\OpenEdge\bin,C:\Progress\OpenEdge\gui,C:\Progress\OpenEdge\gui\ablunit.pl,C:\Progress\OpenEdge\gui\adedesk.pl,C:\Progress\OpenEdge\gui\aderes.pl,C:\Progress\OpenEdge\gui\OpenEdge.ServerAdmin.pl
+
+** Databases (logical/type/physical) **
+   sport               PROGRESS  sport
+
+** End of Protrace **

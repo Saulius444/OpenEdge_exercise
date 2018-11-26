@@ -1,0 +1,20 @@
+<Beans>
+    <Bean Class="net.sourceforge.squirrel_sql.fw.sql.SQLAlias">
+        <autoLogon>true</autoLogon>
+        <connectAtStartup>false</connectAtStartup>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-27</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>3cc736f0:1674edb8cb4:-5794</string>
+        </identifier>
+        <name>sportDB</name>
+        <password/>
+        <url>jdbc:datadirect:openedge://localhost:5679;databaseName=sport.db</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName>Saulius</userName>
+    </Bean>
+</Beans>
