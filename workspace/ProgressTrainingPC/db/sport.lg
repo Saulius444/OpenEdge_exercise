@@ -828,3 +828,839 @@
 [2018/11/26@16:00:20.206+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
 [2018/11/26@16:44:02.706+0200] P-7412       T-12052 I SRV     1: (794)   Usernum 24 terminated abnormally. 
 [2018/11/26@16:44:02.706+0200] P-7412       T-12052 I SRV     1: (739)   Logout usernum 24, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/26@16:47:37.683+0200] P-11392      T-11396 I FMAGENT 6: (8848)  Connection to Admin Server lost. 
+[2018/11/26@16:47:37.685+0200] P-11392      T-11396 I FMAGENT 6: (14262) Successfully connected to AdminServer on port 8846 using TCP/IP IPv4 address 127.0.0.1. 
+[2018/11/26@16:47:37.701+0200] P-11708      T-11712 I BROKER  0: (8848)  Connection to Admin Server lost. 
+
+                Tue Nov 27 08:16:12 2018
+[2018/11/27@08:16:12.769+0200] P-11708      T-11712 I BROKER  0: (14262) Successfully connected to AdminServer on port 7846 using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/27@08:16:12.776+0200] P-11708      T-11712 I BROKER  0: (8846)  Registered with Admin Server. 
+[2018/11/27@08:16:13.958+0200] P-9692       T-10232 I OEMAGENT7: (452)   Login by SYSTEM on batch. 
+[2018/11/27@08:16:13.962+0200] P-9692       T-10232 I OEMAGENT7: (7129)  Usr 7 set name to DB_Agent. 
+[2018/11/27@08:16:13.962+0200] P-9692       T-10232 I FMAGENT 7: (10377) A db agent is already running on this database. 
+[2018/11/27@08:16:13.963+0200] P-9692       T-10232 I OEMAGENT7: (453)   Logout by DB_Agent on batch. 
+[2018/11/27@08:16:27.030+0200] P-11392      T-11396 I FMAGENT 6: (8845)  Error registering with Admin Server. 
+[2018/11/27@08:16:27.031+0200] P-11392      T-11396 I FMAGENT 6: (14262) Successfully connected to AdminServer on port 8846 using TCP/IP IPv4 address 192.168.1.48. 
+[2018/11/27@08:16:27.033+0200] P-11392      T-11396 I FMAGENT 6: (8846)  Registered with Admin Server. 
+[2018/11/27@08:17:06.914+0200] P-7412       T-12052 I SRV     1: (742)   Login usernum 24, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/27@08:17:06.915+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 24 set name to Saulius. 
+[2018/11/27@08:17:06.915+0200] P-7412       T-12052 I SRV     1: (17961) User 24 set tty to DESKTOP-DB0J1AG. 
+[2018/11/27@08:17:06.939+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 24 set name to Saulius. 
+[2018/11/27@08:29:02.145+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/27@08:29:02.146+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@08:29:02.146+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/27@08:29:02.155+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@08:38:06.878+0200] P-7180       T-11536 I SRV     4: (742)   Login usernum 22, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/27@08:38:06.879+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 22 set name to Saulius. 
+[2018/11/27@08:38:06.879+0200] P-7180       T-11536 I SRV     4: (17961) User 22 set tty to DESKTOP-DB0J1AG. 
+[2018/11/27@08:38:06.891+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 22 set name to Saulius. 
+[2018/11/27@08:38:19.686+0200] P-7180       T-11536 I SRV     4: (739)   Logout usernum 22, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/27@08:38:25.101+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/27@08:47:02.439+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/27@08:47:02.439+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@08:47:02.440+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/27@08:47:02.455+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@09:06:02.026+0200] P-7180       T-11536 I SRV     4: (742)   Login usernum 22, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/27@09:06:02.026+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 22 set name to Saulius. 
+[2018/11/27@09:06:02.026+0200] P-7180       T-11536 I SRV     4: (17961) User 22 set tty to DESKTOP-DB0J1AG. 
+[2018/11/27@09:06:02.035+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 22 set name to Saulius. 
+[2018/11/27@09:06:11.526+0200] P-7180       T-11536 I SRV     4: (739)   Logout usernum 22, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/27@09:25:56.930+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/27@09:27:58.658+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/27@09:27:58.658+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@09:27:58.658+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/27@09:27:58.667+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@09:28:14.813+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/27@09:39:24.382+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/27@09:39:24.383+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@09:39:24.383+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/27@09:39:24.392+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@09:39:26.282+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/27@09:46:51.707+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/27@09:46:51.708+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@09:46:51.708+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/27@09:46:51.738+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@09:47:02.841+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/27@09:47:48.107+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/27@09:47:48.107+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@09:47:48.108+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/27@09:47:48.118+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@09:47:55.677+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/27@10:08:17.363+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/27@10:08:17.364+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@10:08:17.365+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/27@10:08:17.395+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@10:08:26.706+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/27@10:11:39.867+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/27@10:11:39.868+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@10:11:39.869+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/27@10:11:39.891+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@10:11:45.963+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/27@13:00:13.533+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/27@13:00:13.533+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@13:00:13.533+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/27@13:00:13.543+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@13:01:15.567+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/27@13:03:17.716+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/27@13:03:17.716+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@13:03:17.716+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/27@13:03:17.725+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@13:08:38.492+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/27@13:18:54.914+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/27@13:18:54.915+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@13:18:54.915+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/27@13:18:54.924+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@13:20:29.593+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/27@13:47:59.683+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/27@13:47:59.683+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@13:47:59.683+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/27@13:47:59.692+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@13:48:25.816+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/27@14:44:11.422+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/27@14:44:11.422+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@14:44:11.423+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/27@14:44:11.445+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@14:44:18.593+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/27@15:11:31.068+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/27@15:11:31.069+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@15:11:31.070+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/27@15:11:31.102+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@15:32:24.908+0200] P-7180       T-11536 I SRV     4: (742)   Login usernum 22, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/27@15:32:24.908+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 22 set name to Saulius. 
+[2018/11/27@15:32:24.908+0200] P-7180       T-11536 I SRV     4: (17961) User 22 set tty to DESKTOP-DB0J1AG. 
+[2018/11/27@15:32:24.919+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 22 set name to Saulius. 
+[2018/11/27@15:40:48.507+0200] P-7412       T-12052 I SRV     1: (742)   Login usernum 21, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/27@15:40:48.507+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 21 set name to Saulius. 
+[2018/11/27@15:40:48.508+0200] P-7412       T-12052 I SRV     1: (17961) User 21 set tty to DESKTOP-DB0J1AG. 
+[2018/11/27@15:40:48.518+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 21 set name to Saulius. 
+[2018/11/27@15:41:41.230+0200] P-7412       T-12052 I SRV     1: (739)   Logout usernum 21, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/27@15:41:44.462+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/27@15:43:42.729+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/27@15:43:42.729+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@15:43:42.729+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/27@15:43:42.740+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@15:44:05.053+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/27@15:47:11.831+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/27@15:47:11.832+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@15:47:11.832+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/27@15:47:11.844+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@15:47:35.281+0200] P-10496      T-11880 I SRV     2: (5407)  WARNING: -nb exceeded. Automatically increasing from 100 to 200. 
+[2018/11/27@15:47:35.282+0200] P-10496      T-11880 I SRV     2: (14658) Previous message sent on behalf of user 23, server pid 10496, broker pid 11708. (5512) 
+[2018/11/27@15:47:35.282+0200] P-10496      T-11880 I SRV     2: (5177)  Registry error 5: Could not add message file 'C:\Progress\OpenEdge\bin\PROMSGS.DLL' to the Event Viewer. 
+[2018/11/27@15:47:35.282+0200] P-10496      T-11880 I SRV     2: (14658) Previous message sent on behalf of user 23, server pid 10496, broker pid 11708. (5512) 
+[2018/11/27@15:47:50.435+0200] P-10496      T-11880 I SRV     2: (794)   Usernum 23 terminated abnormally. 
+[2018/11/27@15:47:50.436+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/27@15:48:34.693+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/27@15:48:34.694+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@15:48:34.695+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/27@15:48:34.727+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@15:48:58.448+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/27@15:50:26.125+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/27@15:50:26.125+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@15:50:26.125+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/27@15:50:26.135+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@15:50:40.795+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/27@16:08:58.097+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/27@16:08:58.098+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@16:08:58.099+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/27@16:08:58.118+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/27@16:11:02.200+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/27@16:35:43.355+0200] P-7412       T-12052 I SRV     1: (794)   Usernum 24 terminated abnormally. 
+[2018/11/27@16:35:43.356+0200] P-7412       T-12052 I SRV     1: (739)   Logout usernum 24, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/27@16:36:05.966+0200] P-7180       T-11536 I SRV     4: (794)   Usernum 22 terminated abnormally. 
+[2018/11/27@16:36:05.966+0200] P-7180       T-11536 I SRV     4: (739)   Logout usernum 22, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/27@16:36:08.894+0200] P-11392      T-11396 I FMAGENT 6: (8848)  Connection to Admin Server lost. 
+[2018/11/27@16:36:08.897+0200] P-11392      T-11396 I FMAGENT 6: (14262) Successfully connected to AdminServer on port 8846 using TCP/IP IPv4 address 127.0.0.1. 
+[2018/11/27@16:36:08.903+0200] P-11392      T-11396 I FMAGENT 6: (8846)  Registered with Admin Server. 
+
+                Wed Nov 28 08:22:49 2018
+[2018/11/28@08:22:49.997+0200] P-7412       T-12052 I SRV     1: (742)   Login usernum 24, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@08:22:49.998+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 24 set name to Saulius. 
+[2018/11/28@08:22:49.999+0200] P-7412       T-12052 I SRV     1: (17961) User 24 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@08:22:50.032+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 24 set name to Saulius. 
+[2018/11/28@08:26:05.899+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@08:26:05.900+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@08:26:05.900+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@08:26:05.910+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@08:28:35.124+0200] P-7180       T-11536 I SRV     4: (742)   Login usernum 22, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@08:28:35.125+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 22 set name to Saulius. 
+[2018/11/28@08:28:35.125+0200] P-7180       T-11536 I SRV     4: (17961) User 22 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@08:28:35.134+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 22 set name to Saulius. 
+[2018/11/28@08:28:51.636+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@08:29:07.798+0200] P-7180       T-11536 I SRV     4: (739)   Logout usernum 22, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@08:29:38.002+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@08:29:38.002+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@08:29:38.002+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@08:29:38.012+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@08:30:05.699+0200] P-11204      T-6904  I SRV     3: (8873)  Login usernum 22, remote SQL client. 
+[2018/11/28@08:30:05.704+0200] P-11204      T-6904  I SRV     3: (7129)  Usr 22 set name to Saulius. 
+[2018/11/28@08:30:05.717+0200] P-11204      T-6904  I SQLSRV2 3: (-----) Login by user 22. Using TCP/IP IPV4 address 127.0.0.1
+[2018/11/28@08:31:59.162+0200] P-7180       T-11536 I SRV     4: (742)   Login usernum 21, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@08:31:59.162+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 21 set name to Saulius. 
+[2018/11/28@08:31:59.162+0200] P-7180       T-11536 I SRV     4: (17961) User 21 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@08:31:59.173+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 21 set name to Saulius. 
+[2018/11/28@08:34:03.926+0200] P-7180       T-11536 I SRV     4: (739)   Logout usernum 21, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@08:34:04.441+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@08:34:07.727+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@08:34:07.728+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@08:34:07.728+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@08:34:07.747+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@08:34:32.884+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@08:35:21.302+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@08:35:21.303+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@08:35:21.303+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@08:35:21.313+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@08:35:33.282+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@08:36:04.124+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@08:36:04.124+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@08:36:04.125+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@08:36:04.149+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@08:45:01.148+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@09:22:11.536+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@09:22:11.537+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:22:11.537+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@09:22:11.561+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:22:17.360+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@09:23:07.184+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@09:23:07.184+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:23:07.184+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@09:23:07.195+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:23:25.334+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@09:24:18.343+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@09:24:18.344+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:24:18.345+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@09:24:18.368+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:24:30.666+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@09:27:14.899+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@09:27:14.899+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:27:14.899+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@09:27:14.910+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:27:31.842+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@09:28:17.953+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@09:28:17.953+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:28:17.953+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@09:28:17.962+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:28:32.727+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@09:36:19.996+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@09:36:19.997+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:36:19.998+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@09:36:20.025+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:36:38.206+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@09:37:05.654+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@09:37:05.654+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:37:05.654+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@09:37:05.665+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:41:03.419+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@09:41:56.603+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@09:41:56.603+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:41:56.603+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@09:41:56.612+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:42:04.499+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@09:42:40.857+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@09:42:40.858+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:42:40.859+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@09:42:40.887+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:42:53.107+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@09:43:22.355+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@09:43:22.356+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:43:22.356+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@09:43:22.367+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:43:30.179+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@09:43:48.243+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@09:43:48.244+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:43:48.245+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@09:43:48.271+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:43:54.383+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@09:44:40.847+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@09:44:40.847+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:44:40.848+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@09:44:40.857+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:44:48.593+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@09:45:40.890+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@09:45:40.891+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:45:40.891+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@09:45:40.899+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:45:56.178+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@09:47:07.291+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@09:47:07.291+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:47:07.291+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@09:47:07.300+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:47:37.961+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@09:47:54.526+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@09:47:54.526+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:47:54.527+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@09:47:54.537+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:48:05.289+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@09:48:21.190+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@09:48:21.190+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:48:21.191+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@09:48:21.217+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@09:48:27.864+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@10:01:28.273+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@10:01:28.274+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@10:01:28.274+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@10:01:28.282+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@10:01:39.908+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@10:26:34.934+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@10:26:34.935+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@10:26:34.936+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@10:26:34.959+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@10:27:02.077+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@10:27:59.545+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@10:27:59.545+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@10:27:59.546+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@10:27:59.572+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@10:28:11.106+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@10:53:52.450+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@10:53:52.450+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@10:53:52.450+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@10:53:52.462+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@10:54:31.173+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@10:54:45.132+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@10:54:45.132+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@10:54:45.133+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@10:54:45.164+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@10:54:53.110+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@11:00:05.186+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@11:00:05.186+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@11:00:05.187+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@11:00:05.196+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@11:00:25.005+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@11:20:49.948+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@11:20:49.949+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@11:20:49.950+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@11:20:49.979+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@11:24:31.432+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@11:25:30.614+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@11:25:30.615+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@11:25:30.615+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@11:25:30.626+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@11:25:43.496+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@12:14:59.825+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@12:14:59.826+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@12:14:59.826+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@12:14:59.843+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@12:15:31.705+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@12:18:28.021+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@12:18:28.021+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@12:18:28.021+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@12:18:28.043+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@12:18:39.750+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@12:18:54.286+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@12:18:54.287+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@12:18:54.287+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@12:18:54.309+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@12:19:09.600+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@12:21:32.505+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@12:21:32.506+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@12:21:32.507+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@12:21:32.533+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@12:21:53.563+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@12:24:48.813+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@12:24:48.813+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@12:24:48.813+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@12:24:48.824+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@12:25:25.226+0200] P-7180       T-11536 I SRV     4: (742)   Login usernum 21, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@12:25:25.227+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 21 set name to Saulius. 
+[2018/11/28@12:25:25.228+0200] P-7180       T-11536 I SRV     4: (17961) User 21 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@12:25:25.256+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 21 set name to Saulius. 
+[2018/11/28@12:26:59.924+0200] P-7412       T-12052 I SRV     1: (742)   Login usernum 20, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@12:26:59.924+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 20 set name to Saulius. 
+[2018/11/28@12:26:59.924+0200] P-7412       T-12052 I SRV     1: (17961) User 20 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@12:26:59.935+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 20 set name to Saulius. 
+[2018/11/28@12:27:22.578+0200] P-7412       T-12052 I SRV     1: (739)   Logout usernum 20, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@12:27:30.513+0200] P-7412       T-12052 I SRV     1: (742)   Login usernum 20, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@12:27:30.514+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 20 set name to Saulius. 
+[2018/11/28@12:27:30.515+0200] P-7412       T-12052 I SRV     1: (17961) User 20 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@12:27:30.542+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 20 set name to Saulius. 
+[2018/11/28@12:28:15.967+0200] P-7412       T-12052 I SRV     1: (739)   Logout usernum 20, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@12:29:48.905+0200] P-7412       T-12052 I SRV     1: (742)   Login usernum 20, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@12:29:48.906+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 20 set name to Saulius. 
+[2018/11/28@12:29:48.907+0200] P-7412       T-12052 I SRV     1: (17961) User 20 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@12:29:48.938+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 20 set name to Saulius. 
+[2018/11/28@12:31:08.174+0200] P-7412       T-12052 I SRV     1: (739)   Logout usernum 20, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@12:31:48.017+0200] P-7412       T-12052 I SRV     1: (742)   Login usernum 20, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@12:31:48.018+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 20 set name to Saulius. 
+[2018/11/28@12:31:48.019+0200] P-7412       T-12052 I SRV     1: (17961) User 20 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@12:31:48.046+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 20 set name to Saulius. 
+[2018/11/28@12:33:25.620+0200] P-7412       T-12052 I SRV     1: (739)   Logout usernum 20, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@12:42:05.336+0200] P-7412       T-12052 I SRV     1: (742)   Login usernum 20, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@12:42:05.337+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 20 set name to Saulius. 
+[2018/11/28@12:42:05.338+0200] P-7412       T-12052 I SRV     1: (17961) User 20 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@12:42:05.368+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 20 set name to Saulius. 
+[2018/11/28@12:42:22.120+0200] P-7412       T-12052 I SRV     1: (739)   Logout usernum 20, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@12:42:35.423+0200] P-7412       T-12052 I SRV     1: (742)   Login usernum 20, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@12:42:35.423+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 20 set name to Saulius. 
+[2018/11/28@12:42:35.423+0200] P-7412       T-12052 I SRV     1: (17961) User 20 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@12:42:35.435+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 20 set name to Saulius. 
+[2018/11/28@12:42:50.398+0200] P-7412       T-12052 I SRV     1: (739)   Logout usernum 20, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@12:43:21.538+0200] P-7412       T-12052 I SRV     1: (742)   Login usernum 20, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@12:43:21.539+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 20 set name to Saulius. 
+[2018/11/28@12:43:21.540+0200] P-7412       T-12052 I SRV     1: (17961) User 20 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@12:43:21.570+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 20 set name to Saulius. 
+[2018/11/28@12:43:31.626+0200] P-7412       T-12052 I SRV     1: (739)   Logout usernum 20, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@12:44:24.681+0200] P-7412       T-12052 I SRV     1: (742)   Login usernum 20, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@12:44:24.681+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 20 set name to Saulius. 
+[2018/11/28@12:44:24.681+0200] P-7412       T-12052 I SRV     1: (17961) User 20 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@12:44:24.691+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 20 set name to Saulius. 
+[2018/11/28@12:44:30.968+0200] P-7412       T-12052 I SRV     1: (739)   Logout usernum 20, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@12:46:49.325+0200] P-7412       T-12052 I SRV     1: (742)   Login usernum 20, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@12:46:49.326+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 20 set name to Saulius. 
+[2018/11/28@12:46:49.327+0200] P-7412       T-12052 I SRV     1: (17961) User 20 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@12:46:49.352+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 20 set name to Saulius. 
+[2018/11/28@12:46:58.205+0200] P-7412       T-12052 I SRV     1: (739)   Logout usernum 20, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@12:49:01.440+0200] P-7412       T-12052 I SRV     1: (742)   Login usernum 20, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@12:49:01.440+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 20 set name to Saulius. 
+[2018/11/28@12:49:01.440+0200] P-7412       T-12052 I SRV     1: (17961) User 20 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@12:49:01.450+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 20 set name to Saulius. 
+[2018/11/28@12:49:17.182+0200] P-7412       T-12052 I SRV     1: (739)   Logout usernum 20, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@12:50:21.077+0200] P-7412       T-12052 I SRV     1: (742)   Login usernum 20, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@12:50:21.078+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 20 set name to Saulius. 
+[2018/11/28@12:50:21.078+0200] P-7412       T-12052 I SRV     1: (17961) User 20 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@12:50:21.088+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 20 set name to Saulius. 
+[2018/11/28@12:53:47.913+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 19, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@12:53:47.913+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 19 set name to Saulius. 
+[2018/11/28@12:53:47.914+0200] P-10496      T-11880 I SRV     2: (17961) User 19 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@12:53:47.925+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 19 set name to Saulius. 
+[2018/11/28@12:54:32.430+0200] P-7180       T-11536 I SRV     4: (742)   Login usernum 18, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@12:54:32.431+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 18 set name to Saulius. 
+[2018/11/28@12:54:32.431+0200] P-7180       T-11536 I SRV     4: (17961) User 18 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@12:54:32.444+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 18 set name to Saulius. 
+[2018/11/28@12:54:40.736+0200] P-7180       T-11536 I SRV     4: (739)   Logout usernum 18, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@12:58:14.183+0200] P-7180       T-11536 I SRV     4: (742)   Login usernum 18, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@12:58:14.184+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 18 set name to Saulius. 
+[2018/11/28@12:58:14.185+0200] P-7180       T-11536 I SRV     4: (17961) User 18 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@12:58:14.209+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 18 set name to Saulius. 
+[2018/11/28@12:58:28.890+0200] P-7180       T-11536 I SRV     4: (739)   Logout usernum 18, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@12:59:58.036+0200] P-7180       T-11536 I SRV     4: (742)   Login usernum 18, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@12:59:58.036+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 18 set name to Saulius. 
+[2018/11/28@12:59:58.036+0200] P-7180       T-11536 I SRV     4: (17961) User 18 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@12:59:58.046+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 18 set name to Saulius. 
+[2018/11/28@13:00:13.346+0200] P-7180       T-11536 I SRV     4: (739)   Logout usernum 18, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@13:00:26.575+0200] P-7180       T-11536 I SRV     4: (742)   Login usernum 18, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@13:00:26.575+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 18 set name to Saulius. 
+[2018/11/28@13:00:26.575+0200] P-7180       T-11536 I SRV     4: (17961) User 18 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@13:00:26.586+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 18 set name to Saulius. 
+[2018/11/28@13:00:36.522+0200] P-7180       T-11536 I SRV     4: (739)   Logout usernum 18, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@13:02:33.050+0200] P-7180       T-11536 I SRV     4: (742)   Login usernum 18, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@13:02:33.050+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 18 set name to Saulius. 
+[2018/11/28@13:02:33.050+0200] P-7180       T-11536 I SRV     4: (17961) User 18 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@13:02:33.060+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 18 set name to Saulius. 
+[2018/11/28@13:02:41.306+0200] P-7180       T-11536 I SRV     4: (739)   Logout usernum 18, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@13:06:02.128+0200] P-7180       T-11536 I SRV     4: (742)   Login usernum 18, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@13:06:02.128+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 18 set name to Saulius. 
+[2018/11/28@13:06:02.128+0200] P-7180       T-11536 I SRV     4: (17961) User 18 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@13:06:02.137+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 18 set name to Saulius. 
+[2018/11/28@13:06:11.167+0200] P-7180       T-11536 I SRV     4: (739)   Logout usernum 18, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@13:06:47.436+0200] P-7180       T-11536 I SRV     4: (742)   Login usernum 18, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@13:06:47.437+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 18 set name to Saulius. 
+[2018/11/28@13:06:47.437+0200] P-7180       T-11536 I SRV     4: (17961) User 18 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@13:06:47.466+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 18 set name to Saulius. 
+[2018/11/28@13:10:56.699+0200] P-7180       T-11536 I SRV     4: (739)   Logout usernum 18, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@13:14:25.923+0200] P-7180       T-11536 I SRV     4: (742)   Login usernum 18, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@13:14:25.923+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 18 set name to Saulius. 
+[2018/11/28@13:14:25.923+0200] P-7180       T-11536 I SRV     4: (17961) User 18 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@13:14:25.932+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 18 set name to Saulius. 
+[2018/11/28@13:14:45.361+0200] P-7180       T-11536 I SRV     4: (739)   Logout usernum 18, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@13:20:27.037+0200] P-7180       T-11536 I SRV     4: (742)   Login usernum 18, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@13:20:27.037+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 18 set name to Saulius. 
+[2018/11/28@13:20:27.038+0200] P-7180       T-11536 I SRV     4: (17961) User 18 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@13:20:27.048+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 18 set name to Saulius. 
+[2018/11/28@13:20:50.522+0200] P-7180       T-11536 I SRV     4: (739)   Logout usernum 18, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@13:21:12.011+0200] P-7180       T-11536 I SRV     4: (742)   Login usernum 18, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@13:21:12.011+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 18 set name to Saulius. 
+[2018/11/28@13:21:12.011+0200] P-7180       T-11536 I SRV     4: (17961) User 18 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@13:21:12.020+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 18 set name to Saulius. 
+[2018/11/28@13:21:43.013+0200] P-7180       T-11536 I SRV     4: (739)   Logout usernum 18, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@13:22:00.365+0200] P-7180       T-11536 I SRV     4: (742)   Login usernum 18, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@13:22:00.366+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 18 set name to Saulius. 
+[2018/11/28@13:22:00.366+0200] P-7180       T-11536 I SRV     4: (17961) User 18 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@13:22:00.375+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 18 set name to Saulius. 
+[2018/11/28@13:22:23.648+0200] P-7180       T-11536 I SRV     4: (739)   Logout usernum 18, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@13:22:44.826+0200] P-7180       T-11536 I SRV     4: (742)   Login usernum 18, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@13:22:44.826+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 18 set name to Saulius. 
+[2018/11/28@13:22:44.826+0200] P-7180       T-11536 I SRV     4: (17961) User 18 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@13:22:44.836+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 18 set name to Saulius. 
+[2018/11/28@13:27:54.469+0200] P-7412       T-12052 I SRV     1: (742)   Login usernum 17, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@13:27:54.469+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 17 set name to Saulius. 
+[2018/11/28@13:27:54.470+0200] P-7412       T-12052 I SRV     1: (17961) User 17 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@13:27:54.480+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 17 set name to Saulius. 
+[2018/11/28@13:29:34.233+0200] P-7412       T-12052 I SRV     1: (739)   Logout usernum 17, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@13:29:36.058+0200] P-7412       T-12052 I SRV     1: (742)   Login usernum 17, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@13:29:36.059+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 17 set name to Saulius. 
+[2018/11/28@13:29:36.059+0200] P-7412       T-12052 I SRV     1: (17961) User 17 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@13:29:36.068+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 17 set name to Saulius. 
+[2018/11/28@13:30:06.107+0200] P-7412       T-12052 I SRV     1: (739)   Logout usernum 17, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@13:30:07.536+0200] P-7412       T-12052 I SRV     1: (742)   Login usernum 17, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@13:30:07.537+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 17 set name to Saulius. 
+[2018/11/28@13:30:07.538+0200] P-7412       T-12052 I SRV     1: (17961) User 17 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@13:30:07.567+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 17 set name to Saulius. 
+[2018/11/28@13:30:27.707+0200] P-7412       T-12052 I SRV     1: (739)   Logout usernum 17, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@13:31:49.632+0200] P-7412       T-12052 I SRV     1: (742)   Login usernum 17, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@13:31:49.633+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 17 set name to Saulius. 
+[2018/11/28@13:31:49.634+0200] P-7412       T-12052 I SRV     1: (17961) User 17 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@13:31:49.663+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 17 set name to Saulius. 
+[2018/11/28@13:34:04.180+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 16, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@13:34:04.181+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@13:34:04.181+0200] P-10496      T-11880 I SRV     2: (17961) User 16 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@13:34:04.190+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@13:34:17.695+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 16, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@13:34:34.071+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 16, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@13:34:34.072+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@13:34:34.073+0200] P-10496      T-11880 I SRV     2: (17961) User 16 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@13:34:34.093+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@13:34:39.685+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 16, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@13:35:10.124+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 16, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@13:35:10.124+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@13:35:10.125+0200] P-10496      T-11880 I SRV     2: (17961) User 16 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@13:35:10.135+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@13:35:20.438+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 16, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@13:35:35.387+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 16, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@13:35:35.388+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@13:35:35.388+0200] P-10496      T-11880 I SRV     2: (17961) User 16 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@13:35:35.420+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@13:51:16.736+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 16, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@13:51:18.427+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 16, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@13:51:18.427+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@13:51:18.427+0200] P-10496      T-11880 I SRV     2: (17961) User 16 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@13:51:18.437+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@13:51:24.740+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 16, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@13:51:25.861+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 16, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@13:51:25.862+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@13:51:25.862+0200] P-10496      T-11880 I SRV     2: (17961) User 16 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@13:51:25.872+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@13:51:33.953+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 16, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@13:53:22.710+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 16, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@13:53:22.710+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@13:53:22.710+0200] P-10496      T-11880 I SRV     2: (17961) User 16 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@13:53:22.721+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@13:53:33.542+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 16, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@13:53:50.664+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 16, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@13:53:50.664+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@13:53:50.665+0200] P-10496      T-11880 I SRV     2: (17961) User 16 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@13:53:50.675+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@13:55:15.958+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 16, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@13:55:21.527+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 16, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@13:55:21.527+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@13:55:21.527+0200] P-10496      T-11880 I SRV     2: (17961) User 16 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@13:55:21.537+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@13:55:33.735+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 16, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@13:55:47.461+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 16, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@13:55:47.462+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@13:55:47.462+0200] P-10496      T-11880 I SRV     2: (17961) User 16 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@13:55:47.473+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@13:56:06.428+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 16, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@13:57:17.089+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 16, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@13:57:17.090+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@13:57:17.091+0200] P-10496      T-11880 I SRV     2: (17961) User 16 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@13:57:17.122+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@13:57:27.342+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 16, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@13:57:28.293+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 16, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@13:57:28.294+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@13:57:28.294+0200] P-10496      T-11880 I SRV     2: (17961) User 16 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@13:57:28.305+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@13:57:32.780+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 16, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@13:57:54.159+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 16, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@13:57:54.160+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@13:57:54.160+0200] P-10496      T-11880 I SRV     2: (17961) User 16 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@13:57:54.169+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@13:58:04.557+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 16, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@13:58:07.250+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 16, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@13:58:07.251+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@13:58:07.251+0200] P-10496      T-11880 I SRV     2: (17961) User 16 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@13:58:07.280+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@13:58:16.704+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 16, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:01:45.149+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 16, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@14:01:45.150+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@14:01:45.150+0200] P-10496      T-11880 I SRV     2: (17961) User 16 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@14:01:45.178+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@14:02:15.575+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 16, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:02:17.046+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 16, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@14:02:17.047+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@14:02:17.047+0200] P-10496      T-11880 I SRV     2: (17961) User 16 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@14:02:17.056+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@14:02:24.866+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 16, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:03:32.011+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 16, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@14:03:32.011+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@14:03:32.012+0200] P-10496      T-11880 I SRV     2: (17961) User 16 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@14:03:32.021+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@14:03:54.314+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 16, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:03:55.285+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 16, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@14:03:55.285+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@14:03:55.285+0200] P-10496      T-11880 I SRV     2: (17961) User 16 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@14:03:55.294+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@14:04:04.183+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 16, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:14:03.542+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 16, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@14:14:03.542+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@14:14:03.542+0200] P-10496      T-11880 I SRV     2: (17961) User 16 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@14:14:03.552+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@14:14:55.910+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 16, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:15:03.291+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 16, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@14:15:03.292+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@14:15:03.293+0200] P-10496      T-11880 I SRV     2: (17961) User 16 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@14:15:03.326+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 16 set name to Saulius. 
+[2018/11/28@14:25:19.055+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 16, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:25:21.712+0200] P-7412       T-12052 I SRV     1: (739)   Logout usernum 17, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:25:22.578+0200] P-7180       T-11536 I SRV     4: (739)   Logout usernum 18, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:25:25.303+0200] P-7412       T-12052 I SRV     1: (739)   Logout usernum 20, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:25:26.063+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:25:32.487+0200] P-7180       T-11536 I SRV     4: (739)   Logout usernum 21, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:25:33.607+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 19, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:27:30.315+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@14:27:30.316+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:27:30.317+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@14:27:30.345+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:28:57.744+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:31:08.942+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@14:31:08.942+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:31:08.942+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@14:31:08.952+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:31:21.585+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:32:05.540+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@14:32:05.540+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:32:05.540+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@14:32:05.551+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:32:29.956+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:32:47.896+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@14:32:47.896+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:32:47.897+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@14:32:47.907+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:32:51.222+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:32:56.451+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@14:32:56.451+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:32:56.451+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@14:32:56.462+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:32:56.533+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:33:11.087+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@14:33:11.087+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:33:11.087+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@14:33:11.097+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:33:11.159+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:33:40.623+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@14:33:40.623+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:33:40.623+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@14:33:40.634+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:34:19.694+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:34:20.923+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@14:34:20.923+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:34:20.923+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@14:34:20.932+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:34:25.697+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:34:26.848+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@14:34:26.849+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:34:26.850+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@14:34:26.869+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:34:38.159+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:36:52.950+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@14:36:52.951+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:36:52.951+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@14:36:52.960+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:37:01.343+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:37:18.155+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@14:37:18.155+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:37:18.156+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@14:37:18.166+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:37:27.492+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:37:48.230+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@14:37:48.230+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:37:48.230+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@14:37:48.240+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:37:53.525+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:38:23.122+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@14:38:23.124+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:38:23.125+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@14:38:23.161+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:38:29.345+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:39:34.742+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@14:39:34.743+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:39:34.744+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@14:39:34.772+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:39:48.171+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:39:50.589+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@14:39:50.589+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:39:50.589+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@14:39:50.598+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:39:56.225+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:41:13.893+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@14:41:13.893+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:41:13.893+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@14:41:13.904+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:41:21.439+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:41:22.879+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@14:41:22.880+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:41:22.881+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@14:41:22.909+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:41:29.533+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:42:00.510+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@14:42:00.510+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:42:00.510+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@14:42:00.520+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:42:08.892+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:43:19.510+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@14:43:19.510+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:43:19.510+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@14:43:19.520+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:43:37.231+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:45:37.459+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@14:45:37.459+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:45:37.459+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@14:45:37.468+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:45:48.770+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:45:49.688+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@14:45:49.688+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:45:49.689+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@14:45:49.698+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:49:48.285+0200] P-7180       T-11536 I SRV     4: (742)   Login usernum 21, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@14:49:48.285+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 21 set name to Saulius. 
+[2018/11/28@14:49:48.285+0200] P-7180       T-11536 I SRV     4: (17961) User 21 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@14:49:48.296+0200] P-7180       T-11536 I SRV     4: (7129)  Usr 21 set name to Saulius. 
+[2018/11/28@14:49:56.221+0200] P-7180       T-11536 I SRV     4: (739)   Logout usernum 21, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:50:00.706+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:50:47.229+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@14:50:47.230+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:50:47.230+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@14:50:47.240+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:50:54.690+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:53:07.176+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@14:53:07.176+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:53:07.177+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@14:53:07.186+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:53:28.158+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@14:54:29.589+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@14:54:29.589+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:54:29.589+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@14:54:29.598+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@14:54:41.197+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@15:03:14.124+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@15:03:14.125+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@15:03:14.125+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@15:03:14.136+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@15:03:27.583+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@15:05:39.838+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@15:05:39.838+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@15:05:39.839+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@15:05:39.870+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@15:06:21.491+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@15:12:24.046+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@15:12:24.046+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@15:12:24.046+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@15:12:24.056+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@15:13:05.197+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@16:09:36.847+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@16:09:36.847+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:09:36.847+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@16:09:36.856+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:09:51.820+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@16:09:53.657+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@16:09:53.657+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:09:53.657+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@16:09:53.666+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:10:02.458+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@16:10:37.202+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@16:10:37.202+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:10:37.202+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@16:10:37.210+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:10:52.410+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@16:11:05.630+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@16:11:05.631+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:11:05.632+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@16:11:05.665+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:11:11.484+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@16:11:41.520+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@16:11:41.521+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:11:41.522+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@16:11:41.551+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:11:48.413+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@16:12:15.189+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@16:12:15.189+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:12:15.190+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@16:12:15.199+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:12:17.818+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@16:12:28.223+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@16:12:28.224+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:12:28.225+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@16:12:28.250+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:12:37.258+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@16:13:15.940+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@16:13:15.941+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:13:15.941+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@16:13:15.950+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:13:27.327+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@16:13:49.368+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@16:13:49.368+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:13:49.368+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@16:13:49.377+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:13:55.023+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@16:14:25.673+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@16:14:25.674+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:14:25.675+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@16:14:25.711+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:14:38.002+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@16:16:58.709+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@16:16:58.709+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:16:58.709+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@16:16:58.718+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:17:09.580+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@16:20:02.920+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@16:20:02.921+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:20:02.921+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@16:20:02.930+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:20:11.899+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@16:20:13.751+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@16:20:13.752+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:20:13.753+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@16:20:13.777+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:20:19.537+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@16:20:50.273+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@16:20:50.273+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:20:50.273+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@16:20:50.282+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:20:57.933+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@16:21:35.897+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@16:21:35.897+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:21:35.897+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@16:21:35.906+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:21:41.508+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@16:21:42.778+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@16:21:42.779+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:21:42.779+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@16:21:42.788+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:21:47.645+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@16:22:11.857+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@16:22:11.857+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:22:11.858+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@16:22:11.870+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:22:19.426+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@16:22:40.608+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@16:22:40.608+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:22:40.608+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@16:22:40.618+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:22:49.301+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@16:23:01.712+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@16:23:01.712+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:23:01.713+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@16:23:01.722+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:23:08.237+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@16:23:21.534+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@16:23:21.534+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:23:21.534+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@16:23:21.544+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:23:26.358+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@16:23:43.697+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@16:23:43.698+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:23:43.698+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@16:23:43.709+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:24:00.967+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@16:24:12.258+0200] P-7412       T-12052 I SRV     1: (739)   Logout usernum 24, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@16:24:12.670+0200] P-11204      T-6904  I SQLSRV2 3: (-----) Logout by user 22.
+[2018/11/28@16:24:12.680+0200] P-11204      T-6904  I SRV     3: (453)   Logout by Saulius on  . 
+[2018/11/28@16:26:55.000+0200] P-7412       T-12052 I SRV     1: (742)   Login usernum 24, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@16:26:55.000+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 24 set name to Saulius. 
+[2018/11/28@16:26:55.000+0200] P-7412       T-12052 I SRV     1: (17961) User 24 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@16:26:55.014+0200] P-7412       T-12052 I SRV     1: (7129)  Usr 24 set name to Saulius. 
+[2018/11/28@16:27:03.304+0200] P-10496      T-11880 I SRV     2: (742)   Login usernum 23, userid Saulius client type ABL , on DESKTOP-DB0J1AG using TCP/IP IPV4 address 127.0.0.1. 
+[2018/11/28@16:27:03.304+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:27:03.304+0200] P-10496      T-11880 I SRV     2: (17961) User 23 set tty to DESKTOP-DB0J1AG. 
+[2018/11/28@16:27:03.315+0200] P-10496      T-11880 I SRV     2: (7129)  Usr 23 set name to Saulius. 
+[2018/11/28@16:27:19.924+0200] P-10496      T-11880 I SRV     2: (739)   Logout usernum 23, userid Saulius, on DESKTOP-DB0J1AG. 
+[2018/11/28@16:27:49.115+0200] P-7412       T-12052 I SRV     1: (739)   Logout usernum 24, userid Saulius, on DESKTOP-DB0J1AG. 

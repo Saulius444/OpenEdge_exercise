@@ -18,14 +18,14 @@
 
 DEFINE TEMP-TABLE ttOrderLine NO-UNDO
 
-FIELD Ordernum        AS INTEGER   LABEL "Ordernum"
-FIELD LineNum         AS INTEGER   LABEL "LineNum"
-FIELD ItemNum         AS INTEGER   LABEL "ItemNum"
+FIELD Ordernum        AS INTEGER   LABEL "Order Nr."
+FIELD LineNum         AS INTEGER   LABEL "Line Nr."
+FIELD ItemNum         AS INTEGER   LABEL "Item Nr."
 FIELD Price           AS DECIMAL   LABEL "Price"
 FIELD Qty             AS INTEGER   LABEL "Quantity"
 FIELD Discount        AS INTEGER   LABEL "Discount"
-FIELD ExtendedPrice   AS DECIMAL   LABEL "ExtendedPrice"
-FIELD OrderLineStatus AS CHARACTER LABEL "OrderLineStatus"
+FIELD ExtendedPrice   AS DECIMAL   LABEL "Extended Price"
+FIELD OrderLineStatus AS CHARACTER LABEL "Status"
 
 INDEX OrderNumIdx IS UNIQUE PRIMARY OrderNum.
 

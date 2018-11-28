@@ -20,71 +20,39 @@ CLASS infoForm INHERITS Form:
     {dsOrder.i}
     {dsOrderLine.i}
     
-    DEFINE PRIVATE VARIABLE bindingSource1 AS Progress.Data.BindingSource NO-UNDO.
-    DEFINE PRIVATE VARIABLE bindingSource2 AS Progress.Data.BindingSource NO-UNDO.
-    DEFINE PRIVATE VARIABLE bindingSource3 AS Progress.Data.BindingSource NO-UNDO.
-    DEFINE PRIVATE VARIABLE components AS System.ComponentModel.IContainer NO-UNDO.
-    DEFINE PRIVATE VARIABLE editButton AS System.Windows.Forms.Button NO-UNDO.
-    DEFINE PRIVATE VARIABLE label2 AS System.Windows.Forms.Label NO-UNDO.
-    DEFINE PRIVATE VARIABLE label1 AS System.Windows.Forms.Label NO-UNDO.
-    DEFINE PRIVATE VARIABLE orderLB AS System.Windows.Forms.ListBox NO-UNDO.
-    DEFINE PRIVATE VARIABLE customerLB AS System.Windows.Forms.ListBox NO-UNDO.
-    DEFINE PRIVATE VARIABLE radGridView1 AS Telerik.WinControls.UI.RadGridView NO-UNDO.
-    DEFINE PRIVATE VARIABLE textBox2 AS System.Windows.Forms.TextBox NO-UNDO.
-    DEFINE PRIVATE VARIABLE textBox1 AS System.Windows.Forms.TextBox NO-UNDO.
+    DEFINE PRIVATE VARIABLE bindingSource1 AS Progress.Data.BindingSource              NO-UNDO.
+    DEFINE PRIVATE VARIABLE bindingSource2 AS Progress.Data.BindingSource              NO-UNDO.
+    DEFINE PRIVATE VARIABLE bindingSource3 AS Progress.Data.BindingSource              NO-UNDO.
+    DEFINE PRIVATE VARIABLE components     AS System.ComponentModel.IContainer         NO-UNDO.
+    DEFINE PRIVATE VARIABLE editButton     AS System.Windows.Forms.Button              NO-UNDO.
+    DEFINE PRIVATE VARIABLE label2         AS System.Windows.Forms.Label               NO-UNDO.
+    DEFINE PRIVATE VARIABLE label1         AS System.Windows.Forms.Label               NO-UNDO.
+    DEFINE PRIVATE VARIABLE orderLB        AS System.Windows.Forms.ListBox             NO-UNDO.
+    DEFINE PRIVATE VARIABLE customerLB     AS System.Windows.Forms.ListBox             NO-UNDO.
+    DEFINE PRIVATE VARIABLE radGridView1   AS Telerik.WinControls.UI.RadGridView       NO-UNDO.
+    DEFINE PRIVATE VARIABLE textBox2       AS System.Windows.Forms.TextBox             NO-UNDO.
+    DEFINE PRIVATE VARIABLE textBox1       AS System.Windows.Forms.TextBox             NO-UNDO.
     DEFINE PRIVATE VARIABLE windows8Theme1 AS Telerik.WinControls.Themes.Windows8Theme NO-UNDO.
     
-    /* Define variables for the ABL static query that will read the customer records from the database */
-    DEFINE QUERY qryCust FOR Customer.
-    DEFINE DATA-SOURCE srcCust FOR QUERY qryCust.
-    
-    /* Define variables for the ABL static query that will read the order records from the database */
-    DEFINE QUERY qryOrder FOR Order.
-    DEFINE DATA-SOURCE srcOrder FOR QUERY qryOrder.
-    
-    /* Define variables for the ABL static query that will read the orderLine records from the database */
+    DEFINE QUERY qryCust      FOR Customer.
+    DEFINE QUERY qryOrder     FOR Order.
     DEFINE QUERY qryOrderLine FOR OrderLine.
+            
+    DEFINE DATA-SOURCE srcCust      FOR QUERY qryCust.
+    DEFINE DATA-SOURCE srcOrder     FOR QUERY qryOrder.  
     DEFINE DATA-SOURCE srcOrderLine FOR QUERY qryOrderLine.
 
-        
-    CONSTRUCTOR PUBLIC infoForm (  ):
-        
+               
+    CONSTRUCTOR PUBLIC infoForm (  ):        
         
         SUPER().
         InitializeComponent().
         
-        /* Set the query to read data from the Customer table */
         QUERY qryCust:QUERY-PREPARE("FOR EACH Customer").
-        BUFFER ttCust:ATTACH-DATA-SOURCE(DATA-SOURCE srcCust:HANDLE).
-        
-        /* Fill the ProDataSet from the OpenEdge database table */
-        DATASET dsCust:FILL().
-        
-        /* Set the ProBindingSource to ProDataSet as the data-source */
+        BUFFER ttCust:ATTACH-DATA-SOURCE(DATA-SOURCE srcCust:HANDLE).        
+        DATASET dsCust:FILL().       
         bindingSource1:Handle = DATASET dsCust:HANDLE.
         
-        
-        /* Set the query to read data from the Order table */
-        QUERY qryOrder:QUERY-PREPARE("FOR EACH Order").
-        BUFFER ttOrder:ATTACH-DATA-SOURCE(DATA-SOURCE srcOrder:HANDLE).
-        
-        /* Fill the ProDataSet from the OpenEdge database table */
-        DATASET dsOrder:FILL().
-        
-        /* Set the ProBindingSource to ProDataSet as the data-source */
-        bindingSource2:Handle = DATASET dsOrder:HANDLE.
-        
-         
-        /* Set the query to read data from the OrderLine table */
-        QUERY qryOrderLine:QUERY-PREPARE("FOR EACH OrderLine").
-        BUFFER ttOrderLine:ATTACH-DATA-SOURCE(DATA-SOURCE srcOrderLine:HANDLE).
-        
-        /* Fill the ProDataSet from the OpenEdge database table */
-        DATASET dsOrderLine:FILL().
-        
-        /* Set the ProBindingSource to ProDataSet as the data-source */
-        bindingSource3:Handle = DATASET dsOrderLine:HANDLE.
-
         THIS-OBJECT:ComponentsCollection:ADD(THIS-OBJECT:components).
         CATCH e AS Progress.Lang.Error:
             UNDO, THROW e.
@@ -92,6 +60,84 @@ CLASS infoForm INHERITS Form:
 
     END CONSTRUCTOR.
 
+
+	@VisualDesigner.
+	METHOD PRIVATE VOID customerLB_Click( INPUT sender AS System.Object, INPUT e AS System.EventArgs ):
+
+	    DATASET dsOrder:EMPTY-DATASET ().   
+        DEFINE VARIABLE theCustomer AS INTEGER NO-UNDO.
+
+        FIND Customer
+          WHERE Customer.Name = customerLB:text.
+
+          theCustomer = Customer.CustNum.
+
+        QUERY qryOrder:QUERY-PREPARE("FOR EACH Order WHERE CustNum = " + QUOTER (theCustomer)).
+        BUFFER ttOrder:ATTACH-DATA-SOURCE(DATA-SOURCE srcOrder:HANDLE).
+        DATASET dsOrder:FILL().
+        bindingSource2:Handle = DATASET dsOrder:HANDLE.	
+        
+		RETURN.
+
+	END METHOD.
+	
+	
+	@VisualDesigner.
+    METHOD PRIVATE VOID orderLB_Click( INPUT sender AS System.Object, INPUT e AS System.EventArgs ):       
+ 
+        DATASET dsOrderLine:EMPTY-DATASET ().
+        
+        DEFINE VARIABLE theOrder AS INTEGER NO-UNDO.
+
+        IF (THIS-OBJECT:orderLB:Text = '')
+          THEN
+            MESSAGE "Please select an order number"
+            VIEW-AS ALERT-BOX.
+
+        ELSE DO:
+          FIND Order
+            WHERE STRING(Order.Ordernum) = orderLB:text.
+
+          theOrder = Order.Ordernum.
+
+        QUERY qryOrderLine:QUERY-PREPARE("FOR EACH OrderLine WHERE Ordernum = " + QUOTER (theOrder)).
+        BUFFER ttOrderLine:ATTACH-DATA-SOURCE(DATA-SOURCE srcOrderLine:HANDLE).
+        DATASET dsOrderLine:FILL().
+        bindingSource3:Handle = DATASET dsOrderLine:HANDLE.
+        
+        END.
+        
+        RETURN.
+
+    END METHOD.
+
+
+	@VisualDesigner.
+	METHOD PRIVATE VOID editButton_Click( INPUT sender AS System.Object, INPUT e AS System.EventArgs ):
+		
+		DEFINE VARIABLE editDialog AS CLASS editDialog.
+		
+		IF (THIS-OBJECT:textBox1:Text = '')
+		  THEN
+		    MESSAGE "Please select an order"
+            VIEW-AS ALERT-BOX.
+
+        ELSE
+          DO:
+            editDialog = NEW editDialog(INPUT THIS-OBJECT:textBox1:Text, INPUT THIS-OBJECT:textBox2:Text).      
+            WAIT-FOR editDialog:ShowDialog().
+          
+            DATASET dsOrderLine:EMPTY-DATASET ().               
+            QUERY qryOrderLine:QUERY-PREPARE("FOR EACH OrderLine WHERE Ordernum = " + QUOTER (textBox1:Text)).
+            BUFFER ttOrderLine:ATTACH-DATA-SOURCE(DATA-SOURCE srcOrderLine:HANDLE).
+            DATASET dsOrderLine:FILL().
+            bindingSource3:Handle = DATASET dsOrderLine:HANDLE.
+        
+        END.
+        
+        RETURN.
+
+	END METHOD.
 
     METHOD PRIVATE VOID InitializeComponent(  ):
         
@@ -103,41 +149,41 @@ CLASS infoForm INHERITS Form:
         Modifying the contents of this method using a code editor will invalidate any support for this file. */
         THIS-OBJECT:components = NEW System.ComponentModel.Container().
         @VisualDesigner.FormMember (NeedsInitialize="true").
-        DEFINE VARIABLE tableDesc1 AS Progress.Data.TableDesc NO-UNDO.
-        tableDesc1 = NEW Progress.Data.TableDesc("ttCust").
+        DEFINE VARIABLE tableDesc4 AS Progress.Data.TableDesc NO-UNDO.
+        tableDesc4 = NEW Progress.Data.TableDesc("ttCust").
         @VisualDesigner.FormMember (NeedsInitialize="true").
-        DEFINE VARIABLE tableDesc2 AS Progress.Data.TableDesc NO-UNDO.
-        tableDesc2 = NEW Progress.Data.TableDesc("ttOrder").
+        DEFINE VARIABLE tableDesc5 AS Progress.Data.TableDesc NO-UNDO.
+        tableDesc5 = NEW Progress.Data.TableDesc("ttOrder").
         @VisualDesigner.FormMember (NeedsInitialize="true").
-        DEFINE VARIABLE tableDesc3 AS Progress.Data.TableDesc NO-UNDO.
-        tableDesc3 = NEW Progress.Data.TableDesc("ttOrderLine").
+        DEFINE VARIABLE tableDesc6 AS Progress.Data.TableDesc NO-UNDO.
+        tableDesc6 = NEW Progress.Data.TableDesc("ttOrderLine").
         @VisualDesigner.FormMember (NeedsInitialize="true").
-        DEFINE VARIABLE gridViewDecimalColumn1 AS Telerik.WinControls.UI.GridViewDecimalColumn NO-UNDO.
-        gridViewDecimalColumn1 = NEW Telerik.WinControls.UI.GridViewDecimalColumn().
+        DEFINE VARIABLE gridViewDecimalColumn8 AS Telerik.WinControls.UI.GridViewDecimalColumn NO-UNDO.
+        gridViewDecimalColumn8 = NEW Telerik.WinControls.UI.GridViewDecimalColumn().
         @VisualDesigner.FormMember (NeedsInitialize="true").
-        DEFINE VARIABLE gridViewDecimalColumn2 AS Telerik.WinControls.UI.GridViewDecimalColumn NO-UNDO.
-        gridViewDecimalColumn2 = NEW Telerik.WinControls.UI.GridViewDecimalColumn().
+        DEFINE VARIABLE gridViewDecimalColumn9 AS Telerik.WinControls.UI.GridViewDecimalColumn NO-UNDO.
+        gridViewDecimalColumn9 = NEW Telerik.WinControls.UI.GridViewDecimalColumn().
         @VisualDesigner.FormMember (NeedsInitialize="true").
-        DEFINE VARIABLE gridViewDecimalColumn3 AS Telerik.WinControls.UI.GridViewDecimalColumn NO-UNDO.
-        gridViewDecimalColumn3 = NEW Telerik.WinControls.UI.GridViewDecimalColumn().
+        DEFINE VARIABLE gridViewDecimalColumn10 AS Telerik.WinControls.UI.GridViewDecimalColumn NO-UNDO.
+        gridViewDecimalColumn10 = NEW Telerik.WinControls.UI.GridViewDecimalColumn().
         @VisualDesigner.FormMember (NeedsInitialize="true").
-        DEFINE VARIABLE gridViewDecimalColumn4 AS Telerik.WinControls.UI.GridViewDecimalColumn NO-UNDO.
-        gridViewDecimalColumn4 = NEW Telerik.WinControls.UI.GridViewDecimalColumn().
+        DEFINE VARIABLE gridViewDecimalColumn11 AS Telerik.WinControls.UI.GridViewDecimalColumn NO-UNDO.
+        gridViewDecimalColumn11 = NEW Telerik.WinControls.UI.GridViewDecimalColumn().
         @VisualDesigner.FormMember (NeedsInitialize="true").
-        DEFINE VARIABLE gridViewDecimalColumn5 AS Telerik.WinControls.UI.GridViewDecimalColumn NO-UNDO.
-        gridViewDecimalColumn5 = NEW Telerik.WinControls.UI.GridViewDecimalColumn().
+        DEFINE VARIABLE gridViewDecimalColumn12 AS Telerik.WinControls.UI.GridViewDecimalColumn NO-UNDO.
+        gridViewDecimalColumn12 = NEW Telerik.WinControls.UI.GridViewDecimalColumn().
         @VisualDesigner.FormMember (NeedsInitialize="true").
-        DEFINE VARIABLE gridViewDecimalColumn6 AS Telerik.WinControls.UI.GridViewDecimalColumn NO-UNDO.
-        gridViewDecimalColumn6 = NEW Telerik.WinControls.UI.GridViewDecimalColumn().
+        DEFINE VARIABLE gridViewDecimalColumn13 AS Telerik.WinControls.UI.GridViewDecimalColumn NO-UNDO.
+        gridViewDecimalColumn13 = NEW Telerik.WinControls.UI.GridViewDecimalColumn().
         @VisualDesigner.FormMember (NeedsInitialize="true").
-        DEFINE VARIABLE gridViewDecimalColumn7 AS Telerik.WinControls.UI.GridViewDecimalColumn NO-UNDO.
-        gridViewDecimalColumn7 = NEW Telerik.WinControls.UI.GridViewDecimalColumn().
+        DEFINE VARIABLE gridViewDecimalColumn14 AS Telerik.WinControls.UI.GridViewDecimalColumn NO-UNDO.
+        gridViewDecimalColumn14 = NEW Telerik.WinControls.UI.GridViewDecimalColumn().
         @VisualDesigner.FormMember (NeedsInitialize="true").
-        DEFINE VARIABLE gridViewTextBoxColumn1 AS Telerik.WinControls.UI.GridViewTextBoxColumn NO-UNDO.
-        gridViewTextBoxColumn1 = NEW Telerik.WinControls.UI.GridViewTextBoxColumn().
+        DEFINE VARIABLE gridViewTextBoxColumn2 AS Telerik.WinControls.UI.GridViewTextBoxColumn NO-UNDO.
+        gridViewTextBoxColumn2 = NEW Telerik.WinControls.UI.GridViewTextBoxColumn().
         @VisualDesigner.FormMember (NeedsInitialize="true").
-        DEFINE VARIABLE tableViewDefinition1 AS Telerik.WinControls.UI.TableViewDefinition NO-UNDO.
-        tableViewDefinition1 = NEW Telerik.WinControls.UI.TableViewDefinition().
+        DEFINE VARIABLE tableViewDefinition2 AS Telerik.WinControls.UI.TableViewDefinition NO-UNDO.
+        tableViewDefinition2 = NEW Telerik.WinControls.UI.TableViewDefinition().
         THIS-OBJECT:customerLB = NEW System.Windows.Forms.ListBox().
         THIS-OBJECT:bindingSource1 = NEW Progress.Data.BindingSource(THIS-OBJECT:components).
         THIS-OBJECT:bindingSource2 = NEW Progress.Data.BindingSource(THIS-OBJECT:components).
@@ -147,9 +193,9 @@ CLASS infoForm INHERITS Form:
         THIS-OBJECT:textBox1 = NEW System.Windows.Forms.TextBox().
         THIS-OBJECT:textBox2 = NEW System.Windows.Forms.TextBox().
         THIS-OBJECT:radGridView1 = NEW Telerik.WinControls.UI.RadGridView().
-        THIS-OBJECT:label1 = NEW System.Windows.Forms.Label().
-        THIS-OBJECT:label2 = NEW System.Windows.Forms.Label().
         THIS-OBJECT:windows8Theme1 = NEW Telerik.WinControls.Themes.Windows8Theme().
+        THIS-OBJECT:label2 = NEW System.Windows.Forms.Label().
+        THIS-OBJECT:label1 = NEW System.Windows.Forms.Label().
         CAST(THIS-OBJECT:bindingSource1, System.ComponentModel.ISupportInitialize):BeginInit().
         CAST(THIS-OBJECT:bindingSource2, System.ComponentModel.ISupportInitialize):BeginInit().
         CAST(THIS-OBJECT:bindingSource3, System.ComponentModel.ISupportInitialize):BeginInit().
@@ -162,11 +208,11 @@ CLASS infoForm INHERITS Form:
         THIS-OBJECT:customerLB:DataSource = THIS-OBJECT:bindingSource1.
         THIS-OBJECT:customerLB:DisplayMember = "Name".
         THIS-OBJECT:customerLB:FormattingEnabled = TRUE.
-        THIS-OBJECT:customerLB:Location = NEW System.Drawing.Point(12, 54).
+        THIS-OBJECT:customerLB:Location = NEW System.Drawing.Point(12, 28).
         THIS-OBJECT:customerLB:Name = "customerLB".
         THIS-OBJECT:customerLB:Size = NEW System.Drawing.Size(235, 173).
         THIS-OBJECT:customerLB:TabIndex = 0.
-        THIS-OBJECT:customerLB:ValueMember = "CustNum".
+        THIS-OBJECT:customerLB:Click:Subscribe(THIS-OBJECT:customerLB_Click).
         /*  */
         /* bindingSource1 */
         /*  */
@@ -176,7 +222,7 @@ CLASS infoForm INHERITS Form:
         @VisualDesigner.FormMember (NeedsInitialize="false", InitializeArray="true").
         DEFINE VARIABLE arrayvar0 AS "Progress.Data.TableDesc[]" NO-UNDO.
         arrayvar0 = NEW "Progress.Data.TableDesc[]"(0).
-        tableDesc1:ChildTables = arrayvar0.
+        tableDesc4:ChildTables = arrayvar0.
         @VisualDesigner.FormMember (NeedsInitialize="false", InitializeArray="true").
         DEFINE VARIABLE arrayvar1 AS Progress.Data.ColumnPropDesc EXTENT 8 NO-UNDO.
         arrayvar1[1] = NEW Progress.Data.ColumnPropDesc("CustNum", "Num", Progress.Data.DataType:INTEGER).
@@ -187,8 +233,8 @@ CLASS infoForm INHERITS Form:
         arrayvar1[6] = NEW Progress.Data.ColumnPropDesc("State", "State", Progress.Data.DataType:CHARACTER).
         arrayvar1[7] = NEW Progress.Data.ColumnPropDesc("Country", "Country", Progress.Data.DataType:CHARACTER).
         arrayvar1[8] = NEW Progress.Data.ColumnPropDesc("CreditLimit", "Credit Limit", Progress.Data.DataType:DECIMAL).
-        tableDesc1:Columns = arrayvar1.
-        THIS-OBJECT:bindingSource1:TableSchema = tableDesc1.
+        tableDesc4:Columns = arrayvar1.
+        THIS-OBJECT:bindingSource1:TableSchema = tableDesc4.
         /*  */
         /* bindingSource2 */
         /*  */
@@ -198,7 +244,7 @@ CLASS infoForm INHERITS Form:
         @VisualDesigner.FormMember (NeedsInitialize="false", InitializeArray="true").
         DEFINE VARIABLE arrayvar2 AS "Progress.Data.TableDesc[]" NO-UNDO.
         arrayvar2 = NEW "Progress.Data.TableDesc[]"(0).
-        tableDesc2:ChildTables = arrayvar2.
+        tableDesc5:ChildTables = arrayvar2.
         @VisualDesigner.FormMember (NeedsInitialize="false", InitializeArray="true").
         DEFINE VARIABLE arrayvar3 AS Progress.Data.ColumnPropDesc EXTENT 8 NO-UNDO.
         arrayvar3[1] = NEW Progress.Data.ColumnPropDesc("OrderNum", "Num", Progress.Data.DataType:INTEGER).
@@ -209,20 +255,19 @@ CLASS infoForm INHERITS Form:
         arrayvar3[6] = NEW Progress.Data.ColumnPropDesc("State", "State", Progress.Data.DataType:CHARACTER).
         arrayvar3[7] = NEW Progress.Data.ColumnPropDesc("Country", "Country", Progress.Data.DataType:CHARACTER).
         arrayvar3[8] = NEW Progress.Data.ColumnPropDesc("CreditLimit", "Credit Limit", Progress.Data.DataType:DECIMAL).
-        tableDesc2:Columns = arrayvar3.
-        THIS-OBJECT:bindingSource2:TableSchema = tableDesc2.
+        tableDesc5:Columns = arrayvar3.
+        THIS-OBJECT:bindingSource2:TableSchema = tableDesc5.
         /*  */
         /* orderLB */
         /*  */
-        THIS-OBJECT:orderLB:DataBindings:Add(NEW System.Windows.Forms.Binding("SelectedValue", THIS-OBJECT:bindingSource1, "CustNum", TRUE)).
         THIS-OBJECT:orderLB:DataSource = THIS-OBJECT:bindingSource2.
         THIS-OBJECT:orderLB:DisplayMember = "OrderNum".
         THIS-OBJECT:orderLB:FormattingEnabled = TRUE.
-        THIS-OBJECT:orderLB:Location = NEW System.Drawing.Point(280, 54).
+        THIS-OBJECT:orderLB:Location = NEW System.Drawing.Point(280, 28).
         THIS-OBJECT:orderLB:Name = "orderLB".
         THIS-OBJECT:orderLB:Size = NEW System.Drawing.Size(235, 173).
         THIS-OBJECT:orderLB:TabIndex = 1.
-        THIS-OBJECT:orderLB:ValueMember = "CustNum".
+        THIS-OBJECT:orderLB:Click:Subscribe(THIS-OBJECT:orderLB_Click).
         /*  */
         /* bindingSource3 */
         /*  */
@@ -232,7 +277,7 @@ CLASS infoForm INHERITS Form:
         @VisualDesigner.FormMember (NeedsInitialize="false", InitializeArray="true").
         DEFINE VARIABLE arrayvar4 AS "Progress.Data.TableDesc[]" NO-UNDO.
         arrayvar4 = NEW "Progress.Data.TableDesc[]"(0).
-        tableDesc3:ChildTables = arrayvar4.
+        tableDesc6:ChildTables = arrayvar4.
         @VisualDesigner.FormMember (NeedsInitialize="false", InitializeArray="true").
         DEFINE VARIABLE arrayvar5 AS Progress.Data.ColumnPropDesc EXTENT 8 NO-UNDO.
         arrayvar5[1] = NEW Progress.Data.ColumnPropDesc("Ordernum", "Ordernum", Progress.Data.DataType:INTEGER).
@@ -243,95 +288,115 @@ CLASS infoForm INHERITS Form:
         arrayvar5[6] = NEW Progress.Data.ColumnPropDesc("Discount", "Discount", Progress.Data.DataType:INTEGER).
         arrayvar5[7] = NEW Progress.Data.ColumnPropDesc("ExtendedPrice", "ExtendedPrice", Progress.Data.DataType:DECIMAL).
         arrayvar5[8] = NEW Progress.Data.ColumnPropDesc("OrderLineStatus", "OrderLine.OrderLineStatus", Progress.Data.DataType:CHARACTER).
-        tableDesc3:Columns = arrayvar5.
-        THIS-OBJECT:bindingSource3:TableSchema = tableDesc3.
+        tableDesc6:Columns = arrayvar5.
+        THIS-OBJECT:bindingSource3:TableSchema = tableDesc6.
         /*  */
         /* editButton */
         /*  */
-        THIS-OBJECT:editButton:Location = NEW System.Drawing.Point(12, 233).
+        THIS-OBJECT:editButton:Location = NEW System.Drawing.Point(12, 207).
         THIS-OBJECT:editButton:Name = "editButton".
         THIS-OBJECT:editButton:Size = NEW System.Drawing.Size(80, 29).
         THIS-OBJECT:editButton:TabIndex = 4.
         THIS-OBJECT:editButton:Text = "Edit Line".
         THIS-OBJECT:editButton:UseCompatibleTextRendering = TRUE.
         THIS-OBJECT:editButton:UseVisualStyleBackColor = TRUE.
+        THIS-OBJECT:editButton:Click:Subscribe(THIS-OBJECT:editButton_Click).
         /*  */
         /* textBox1 */
         /*  */
-        THIS-OBJECT:textBox1:Location = NEW System.Drawing.Point(12, 28).
+        THIS-OBJECT:textBox1:DataBindings:Add(NEW System.Windows.Forms.Binding("Text", THIS-OBJECT:bindingSource2, "OrderNum", TRUE)).
+        THIS-OBJECT:textBox1:Location = NEW System.Drawing.Point(12, 407).
         THIS-OBJECT:textBox1:Name = "textBox1".
         THIS-OBJECT:textBox1:Size = NEW System.Drawing.Size(235, 20).
         THIS-OBJECT:textBox1:TabIndex = 5.
         /*  */
         /* textBox2 */
         /*  */
-        THIS-OBJECT:textBox2:Location = NEW System.Drawing.Point(280, 28).
+        THIS-OBJECT:textBox2:DataBindings:Add(NEW System.Windows.Forms.Binding("Text", THIS-OBJECT:bindingSource3, "LineNum", TRUE)).
+        THIS-OBJECT:textBox2:Location = NEW System.Drawing.Point(280, 407).
         THIS-OBJECT:textBox2:Name = "textBox2".
         THIS-OBJECT:textBox2:Size = NEW System.Drawing.Size(235, 20).
         THIS-OBJECT:textBox2:TabIndex = 6.
         /*  */
         /* radGridView1 */
         /*  */
-        THIS-OBJECT:radGridView1:Location = NEW System.Drawing.Point(12, 268).
+        THIS-OBJECT:radGridView1:Location = NEW System.Drawing.Point(12, 242).
         /*  */
         /*  */
         /*  */
-        gridViewDecimalColumn1:DataType = Progress.Util.TypeHelper:GetType("System.Int32").
-        gridViewDecimalColumn1:FieldName = "Ordernum".
-        gridViewDecimalColumn1:HeaderText = "Ordernum".
-        gridViewDecimalColumn1:IsAutoGenerated = TRUE.
-        gridViewDecimalColumn1:Name = "Ordernum".
-        gridViewDecimalColumn1:Width = 60.
-        gridViewDecimalColumn2:DataType = Progress.Util.TypeHelper:GetType("System.Int32").
-        gridViewDecimalColumn2:FieldName = "LineNum".
-        gridViewDecimalColumn2:HeaderText = "LineNum".
-        gridViewDecimalColumn2:IsAutoGenerated = TRUE.
-        gridViewDecimalColumn2:Name = "LineNum".
-        gridViewDecimalColumn3:DataType = Progress.Util.TypeHelper:GetType("System.Int32").
-        gridViewDecimalColumn3:FieldName = "ItemNum".
-        gridViewDecimalColumn3:HeaderText = "ItemNum".
-        gridViewDecimalColumn3:IsAutoGenerated = TRUE.
-        gridViewDecimalColumn3:Name = "ItemNum".
-        gridViewDecimalColumn4:FieldName = "Price".
-        gridViewDecimalColumn4:HeaderText = "Price".
-        gridViewDecimalColumn4:IsAutoGenerated = TRUE.
-        gridViewDecimalColumn4:Name = "Price".
-        gridViewDecimalColumn5:DataType = Progress.Util.TypeHelper:GetType("System.Int32").
-        gridViewDecimalColumn5:FieldName = "Qty".
-        gridViewDecimalColumn5:HeaderText = "Quantity".
-        gridViewDecimalColumn5:IsAutoGenerated = TRUE.
-        gridViewDecimalColumn5:Name = "Qty".
-        gridViewDecimalColumn6:DataType = Progress.Util.TypeHelper:GetType("System.Int32").
-        gridViewDecimalColumn6:FieldName = "Discount".
-        gridViewDecimalColumn6:HeaderText = "Discount".
-        gridViewDecimalColumn6:IsAutoGenerated = TRUE.
-        gridViewDecimalColumn6:Name = "Discount".
-        gridViewDecimalColumn7:FieldName = "ExtendedPrice".
-        gridViewDecimalColumn7:HeaderText = "ExtendedPrice".
-        gridViewDecimalColumn7:IsAutoGenerated = TRUE.
-        gridViewDecimalColumn7:Name = "ExtendedPrice".
-        gridViewTextBoxColumn1:FieldName = "OrderLineStatus".
-        gridViewTextBoxColumn1:HeaderText = "OrderLine.OrderLineStatus".
-        gridViewTextBoxColumn1:IsAutoGenerated = TRUE.
-        gridViewTextBoxColumn1:Name = "OrderLineStatus".
+        THIS-OBJECT:radGridView1:MasterTemplate:AllowAddNewRow = FALSE.
+        THIS-OBJECT:radGridView1:MasterTemplate:AllowColumnReorder = FALSE.
+        gridViewDecimalColumn8:DataType = Progress.Util.TypeHelper:GetType("System.Int32").
+        gridViewDecimalColumn8:FieldName = "Ordernum".
+        gridViewDecimalColumn8:HeaderText = "Order Nr.".
+        gridViewDecimalColumn8:IsAutoGenerated = TRUE.
+        gridViewDecimalColumn8:Name = "Ordernum".
+        gridViewDecimalColumn8:Width = 60.
+        gridViewDecimalColumn9:DataType = Progress.Util.TypeHelper:GetType("System.Int32").
+        gridViewDecimalColumn9:FieldName = "LineNum".
+        gridViewDecimalColumn9:HeaderText = "LineNr.".
+        gridViewDecimalColumn9:IsAutoGenerated = TRUE.
+        gridViewDecimalColumn9:Name = "LineNum".
+        gridViewDecimalColumn10:DataType = Progress.Util.TypeHelper:GetType("System.Int32").
+        gridViewDecimalColumn10:FieldName = "ItemNum".
+        gridViewDecimalColumn10:HeaderText = "Item Nr.".
+        gridViewDecimalColumn10:IsAutoGenerated = TRUE.
+        gridViewDecimalColumn10:Name = "ItemNum".
+        gridViewDecimalColumn11:FieldName = "Price".
+        gridViewDecimalColumn11:HeaderText = "Price".
+        gridViewDecimalColumn11:IsAutoGenerated = TRUE.
+        gridViewDecimalColumn11:Name = "Price".
+        gridViewDecimalColumn11:Width = 54.
+        gridViewDecimalColumn12:DataType = Progress.Util.TypeHelper:GetType("System.Int32").
+        gridViewDecimalColumn12:FieldName = "Qty".
+        gridViewDecimalColumn12:HeaderText = "Quantity".
+        gridViewDecimalColumn12:IsAutoGenerated = TRUE.
+        gridViewDecimalColumn12:Name = "Qty".
+        gridViewDecimalColumn12:Width = 70.
+        gridViewDecimalColumn13:DataType = Progress.Util.TypeHelper:GetType("System.Int32").
+        gridViewDecimalColumn13:FieldName = "Discount".
+        gridViewDecimalColumn13:HeaderText = "Discount".
+        gridViewDecimalColumn13:IsAutoGenerated = TRUE.
+        gridViewDecimalColumn13:Name = "Discount".
+        gridViewDecimalColumn14:FieldName = "ExtendedPrice".
+        gridViewDecimalColumn14:HeaderText = "Extended Price".
+        gridViewDecimalColumn14:IsAutoGenerated = TRUE.
+        gridViewDecimalColumn14:Name = "ExtendedPrice".
+        gridViewDecimalColumn14:Width = 85.
+        gridViewTextBoxColumn2:FieldName = "OrderLineStatus".
+        gridViewTextBoxColumn2:HeaderText = "Status".
+        gridViewTextBoxColumn2:IsAutoGenerated = TRUE.
+        gridViewTextBoxColumn2:Name = "OrderLineStatus".
+        gridViewTextBoxColumn2:Width = 70.
         @VisualDesigner.FormMember (NeedsInitialize="false", InitializeArray="true").
         DEFINE VARIABLE arrayvar6 AS Telerik.WinControls.UI.GridViewDataColumn EXTENT 8 NO-UNDO.
-        arrayvar6[1] = gridViewDecimalColumn1.
-        arrayvar6[2] = gridViewDecimalColumn2.
-        arrayvar6[3] = gridViewDecimalColumn3.
-        arrayvar6[4] = gridViewDecimalColumn4.
-        arrayvar6[5] = gridViewDecimalColumn5.
-        arrayvar6[6] = gridViewDecimalColumn6.
-        arrayvar6[7] = gridViewDecimalColumn7.
-        arrayvar6[8] = gridViewTextBoxColumn1.
+        arrayvar6[1] = gridViewDecimalColumn8.
+        arrayvar6[2] = gridViewDecimalColumn9.
+        arrayvar6[3] = gridViewDecimalColumn10.
+        arrayvar6[4] = gridViewDecimalColumn11.
+        arrayvar6[5] = gridViewDecimalColumn12.
+        arrayvar6[6] = gridViewDecimalColumn13.
+        arrayvar6[7] = gridViewDecimalColumn14.
+        arrayvar6[8] = gridViewTextBoxColumn2.
         THIS-OBJECT:radGridView1:MasterTemplate:Columns:AddRange(arrayvar6).
         THIS-OBJECT:radGridView1:MasterTemplate:DataSource = THIS-OBJECT:bindingSource3.
-        THIS-OBJECT:radGridView1:MasterTemplate:ViewDefinition = tableViewDefinition1.
+        THIS-OBJECT:radGridView1:MasterTemplate:ViewDefinition = tableViewDefinition2.
         THIS-OBJECT:radGridView1:Name = "radGridView1".
+        THIS-OBJECT:radGridView1:ReadOnly = TRUE.
         THIS-OBJECT:radGridView1:Size = NEW System.Drawing.Size(503, 208).
         THIS-OBJECT:radGridView1:TabIndex = 7.
         THIS-OBJECT:radGridView1:Text = "radGridView1".
         THIS-OBJECT:radGridView1:ThemeName = "Windows8".
+        /*  */
+        /* label2 */
+        /*  */
+        THIS-OBJECT:label2:Location = NEW System.Drawing.Point(280, 2).
+        THIS-OBJECT:label2:Name = "label2".
+        THIS-OBJECT:label2:Size = NEW System.Drawing.Size(235, 23).
+        THIS-OBJECT:label2:TabIndex = 9.
+        THIS-OBJECT:label2:Text = "Order Nr.".
+        THIS-OBJECT:label2:TextAlign = System.Drawing.ContentAlignment:BottomCenter.
+        THIS-OBJECT:label2:UseCompatibleTextRendering = TRUE.
         /*  */
         /* label1 */
         /*  */
@@ -343,27 +408,17 @@ CLASS infoForm INHERITS Form:
         THIS-OBJECT:label1:TextAlign = System.Drawing.ContentAlignment:BottomCenter.
         THIS-OBJECT:label1:UseCompatibleTextRendering = TRUE.
         /*  */
-        /* label2 */
-        /*  */
-        THIS-OBJECT:label2:Location = NEW System.Drawing.Point(280, -2).
-        THIS-OBJECT:label2:Name = "label2".
-        THIS-OBJECT:label2:Size = NEW System.Drawing.Size(235, 23).
-        THIS-OBJECT:label2:TabIndex = 9.
-        THIS-OBJECT:label2:Text = "Order".
-        THIS-OBJECT:label2:TextAlign = System.Drawing.ContentAlignment:BottomCenter.
-        THIS-OBJECT:label2:UseCompatibleTextRendering = TRUE.
-        /*  */
         /* infoForm */
         /*  */
-        THIS-OBJECT:ClientSize = NEW System.Drawing.Size(529, 488).
-        THIS-OBJECT:Controls:Add(THIS-OBJECT:label2).
-        THIS-OBJECT:Controls:Add(THIS-OBJECT:label1).
+        THIS-OBJECT:ClientSize = NEW System.Drawing.Size(529, 464).
         THIS-OBJECT:Controls:Add(THIS-OBJECT:radGridView1).
         THIS-OBJECT:Controls:Add(THIS-OBJECT:textBox2).
-        THIS-OBJECT:Controls:Add(THIS-OBJECT:textBox1).
+        THIS-OBJECT:Controls:Add(THIS-OBJECT:label2).
+        THIS-OBJECT:Controls:Add(THIS-OBJECT:label1).
         THIS-OBJECT:Controls:Add(THIS-OBJECT:editButton).
         THIS-OBJECT:Controls:Add(THIS-OBJECT:orderLB).
         THIS-OBJECT:Controls:Add(THIS-OBJECT:customerLB).
+        THIS-OBJECT:Controls:Add(THIS-OBJECT:textBox1).
         THIS-OBJECT:Cursor = System.Windows.Forms.Cursors:Default.
         THIS-OBJECT:Name = "infoForm".
         THIS-OBJECT:Text = "Information tab".
@@ -379,6 +434,7 @@ CLASS infoForm INHERITS Form:
         END CATCH.
     END METHOD.
 
+	
     DESTRUCTOR PUBLIC infoForm ( ):
 
     END DESTRUCTOR.

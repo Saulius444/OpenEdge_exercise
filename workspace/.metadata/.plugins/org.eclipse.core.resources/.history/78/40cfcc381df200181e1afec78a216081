@@ -1,0 +1,167 @@
+ 
+ /*------------------------------------------------------------------------
+    File        : dialogBox
+    Purpose     : 
+    Syntax      : 
+    Description : 
+    Author(s)   : Saulius
+    Created     : Tue Nov 27 09:19:48 EET 2018
+    Notes       : 
+  ----------------------------------------------------------------------*/
+
+USING Progress.Lang.*.
+USING Progress.Windows.Form.
+
+BLOCK-LEVEL ON ERROR UNDO, THROW.
+
+CLASS dialogBox INHERITS Form: 
+    
+    DEFINE PRIVATE VARIABLE button2 AS System.Windows.Forms.Button NO-UNDO.
+    DEFINE PRIVATE VARIABLE button1 AS System.Windows.Forms.Button NO-UNDO.
+    DEFINE PRIVATE VARIABLE components AS System.ComponentModel.IContainer NO-UNDO.
+    DEFINE PRIVATE VARIABLE label3 AS System.Windows.Forms.Label NO-UNDO.
+    DEFINE PRIVATE VARIABLE label2 AS System.Windows.Forms.Label NO-UNDO.
+    DEFINE PRIVATE VARIABLE label1 AS System.Windows.Forms.Label NO-UNDO.
+    DEFINE PRIVATE VARIABLE textBox3 AS System.Windows.Forms.TextBox NO-UNDO.
+    DEFINE PRIVATE VARIABLE textBox2 AS System.Windows.Forms.TextBox NO-UNDO.
+    DEFINE PRIVATE VARIABLE textBox1 AS System.Windows.Forms.TextBox NO-UNDO.
+
+        
+    CONSTRUCTOR PUBLIC dialogBox (  ):
+        
+        
+        SUPER().
+        InitializeComponent().
+        THIS-OBJECT:ComponentsCollection:ADD(THIS-OBJECT:components).
+        CATCH e AS Progress.Lang.Error:
+            UNDO, THROW e.
+        END CATCH.
+
+    END CONSTRUCTOR.
+
+
+	/*------------------------------------------------------------------------------
+	 Purpose:
+	 Notes:
+	------------------------------------------------------------------------------*/
+	@VisualDesigner.
+	METHOD PRIVATE VOID button2_Click( INPUT sender AS System.Object, INPUT e AS System.EventArgs ):
+		
+		THIS-OBJECT:QUIT.
+    RETURN.
+
+	END METHOD.
+
+    METHOD PRIVATE VOID InitializeComponent(  ):
+        
+        /* NOTE: The following method is automatically generated.
+        
+        We strongly suggest that the contents of this method only be modified using the
+        Visual Designer to avoid any incompatible modifications.
+        
+        Modifying the contents of this method using a code editor will invalidate any support for this file. */
+        THIS-OBJECT:label1 = NEW System.Windows.Forms.Label().
+        THIS-OBJECT:label2 = NEW System.Windows.Forms.Label().
+        THIS-OBJECT:label3 = NEW System.Windows.Forms.Label().
+        THIS-OBJECT:textBox1 = NEW System.Windows.Forms.TextBox().
+        THIS-OBJECT:textBox2 = NEW System.Windows.Forms.TextBox().
+        THIS-OBJECT:textBox3 = NEW System.Windows.Forms.TextBox().
+        THIS-OBJECT:button1 = NEW System.Windows.Forms.Button().
+        THIS-OBJECT:button2 = NEW System.Windows.Forms.Button().
+        THIS-OBJECT:SuspendLayout().
+        /*  */
+        /* label1 */
+        /*  */
+        THIS-OBJECT:label1:Location = NEW System.Drawing.Point(12, 27).
+        THIS-OBJECT:label1:Name = "label1".
+        THIS-OBJECT:label1:Size = NEW System.Drawing.Size(100, 23).
+        THIS-OBJECT:label1:TabIndex = 0.
+        THIS-OBJECT:label1:Text = "Price".
+        THIS-OBJECT:label1:UseCompatibleTextRendering = TRUE.
+        /*  */
+        /* label2 */
+        /*  */
+        THIS-OBJECT:label2:Location = NEW System.Drawing.Point(13, 69).
+        THIS-OBJECT:label2:Name = "label2".
+        THIS-OBJECT:label2:Size = NEW System.Drawing.Size(100, 23).
+        THIS-OBJECT:label2:TabIndex = 1.
+        THIS-OBJECT:label2:Text = "Discount".
+        THIS-OBJECT:label2:UseCompatibleTextRendering = TRUE.
+        /*  */
+        /* label3 */
+        /*  */
+        THIS-OBJECT:label3:Location = NEW System.Drawing.Point(12, 112).
+        THIS-OBJECT:label3:Name = "label3".
+        THIS-OBJECT:label3:Size = NEW System.Drawing.Size(100, 23).
+        THIS-OBJECT:label3:TabIndex = 2.
+        THIS-OBJECT:label3:Text = "Quantity".
+        THIS-OBJECT:label3:UseCompatibleTextRendering = TRUE.
+        /*  */
+        /* textBox1 */
+        /*  */
+        THIS-OBJECT:textBox1:Location = NEW System.Drawing.Point(120, 27).
+        THIS-OBJECT:textBox1:Name = "textBox1".
+        THIS-OBJECT:textBox1:Size = NEW System.Drawing.Size(100, 20).
+        THIS-OBJECT:textBox1:TabIndex = 3.
+        /*  */
+        /* textBox2 */
+        /*  */
+        THIS-OBJECT:textBox2:Location = NEW System.Drawing.Point(120, 69).
+        THIS-OBJECT:textBox2:Name = "textBox2".
+        THIS-OBJECT:textBox2:Size = NEW System.Drawing.Size(100, 20).
+        THIS-OBJECT:textBox2:TabIndex = 4.
+        /*  */
+        /* textBox3 */
+        /*  */
+        THIS-OBJECT:textBox3:Location = NEW System.Drawing.Point(120, 112).
+        THIS-OBJECT:textBox3:Name = "textBox3".
+        THIS-OBJECT:textBox3:Size = NEW System.Drawing.Size(100, 20).
+        THIS-OBJECT:textBox3:TabIndex = 5.
+        /*  */
+        /* button1 */
+        /*  */
+        THIS-OBJECT:button1:Location = NEW System.Drawing.Point(13, 175).
+        THIS-OBJECT:button1:Name = "button1".
+        THIS-OBJECT:button1:Size = NEW System.Drawing.Size(75, 23).
+        THIS-OBJECT:button1:TabIndex = 6.
+        THIS-OBJECT:button1:Text = "Save".
+        THIS-OBJECT:button1:UseCompatibleTextRendering = TRUE.
+        THIS-OBJECT:button1:UseVisualStyleBackColor = TRUE.
+        /*  */
+        /* button2 */
+        /*  */
+        THIS-OBJECT:button2:Location = NEW System.Drawing.Point(145, 175).
+        THIS-OBJECT:button2:Name = "button2".
+        THIS-OBJECT:button2:Size = NEW System.Drawing.Size(75, 23).
+        THIS-OBJECT:button2:TabIndex = 7.
+        THIS-OBJECT:button2:Text = "Exit".
+        THIS-OBJECT:button2:UseCompatibleTextRendering = TRUE.
+        THIS-OBJECT:button2:UseVisualStyleBackColor = TRUE.
+        THIS-OBJECT:button2:Click:Subscribe(THIS-OBJECT:button2_Click).
+        /*  */
+        /* dialogBox */
+        /*  */
+        THIS-OBJECT:ClientSize = NEW System.Drawing.Size(240, 215).
+        THIS-OBJECT:Controls:Add(THIS-OBJECT:button2).
+        THIS-OBJECT:Controls:Add(THIS-OBJECT:button1).
+        THIS-OBJECT:Controls:Add(THIS-OBJECT:textBox3).
+        THIS-OBJECT:Controls:Add(THIS-OBJECT:textBox2).
+        THIS-OBJECT:Controls:Add(THIS-OBJECT:textBox1).
+        THIS-OBJECT:Controls:Add(THIS-OBJECT:label3).
+        THIS-OBJECT:Controls:Add(THIS-OBJECT:label2).
+        THIS-OBJECT:Controls:Add(THIS-OBJECT:label1).
+        THIS-OBJECT:Name = "dialogBox".
+        THIS-OBJECT:Text = "dialogBox".
+        THIS-OBJECT:ResumeLayout(FALSE).
+        THIS-OBJECT:PerformLayout().
+        CATCH e AS Progress.Lang.Error:
+            UNDO, THROW e.
+        END CATCH.
+    END METHOD.
+
+
+    DESTRUCTOR PUBLIC dialogBox ( ):
+
+    END DESTRUCTOR.
+
+END CLASS.

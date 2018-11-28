@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_M2LvwPFbEeiapfVCGBh0_Q" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_M2LvwfFbEeiapfVCGBh0_Q" bindingContexts="_M2NAOfFbEeiapfVCGBh0_Q">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.openedge.pdt.text.editor.OEEditor.p&quot; name=&quot;dsCust.i&quot; tooltip=&quot;ProgressTrainingPC/src/dsCust.i&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProgressTrainingPC/src/dsCust.i&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.openedge.pdt.ve.editor.visualdesigner&quot; name=&quot;infoForm.cls&quot; tooltip=&quot;ProgressTrainingPC/src/infoForm.cls&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProgressTrainingPC/src/infoForm.cls&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.openedge.pdt.text.editor.OEEditor.p&quot; name=&quot;dsOrder.i&quot; tooltip=&quot;ProgressTrainingPC/src/dsOrder.i&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProgressTrainingPC/src/dsOrder.i&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.openedge.pdt.text.editor.OEEditor.p&quot; name=&quot;dsOrderLine.i&quot; tooltip=&quot;ProgressTrainingPC/src/dsOrderLine.i&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProgressTrainingPC/src/dsOrderLine.i&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.openedge.pdt.ve.editor.visualdesigner&quot; name=&quot;Form1.cls&quot; tooltip=&quot;ProgressTrainingPC/src/Form1.cls&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProgressTrainingPC/src/Form1.cls&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.openedge.pdt.text.editor.OEEditor.p&quot; name=&quot;dsOrder.i&quot; tooltip=&quot;ProgressTrainingPC/src/dsOrder.i&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProgressTrainingPC/src/dsOrder.i&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.openedge.pdt.text.editor.OEEditor.cls&quot; name=&quot;editDialog.cls&quot; tooltip=&quot;ProgressTrainingPC/src/editDialog.cls&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProgressTrainingPC/src/editDialog.cls&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.openedge.pdt.text.editor.OEEditor.p&quot; name=&quot;dsOrderLine.i&quot; tooltip=&quot;ProgressTrainingPC/src/dsOrderLine.i&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProgressTrainingPC/src/dsOrderLine.i&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.openedge.pdt.text.editor.OEEditor.cls&quot; name=&quot;infoForm.cls&quot; tooltip=&quot;ProgressTrainingPC/src/infoForm.cls&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProgressTrainingPC/src/infoForm.cls&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.openedge.pdt.text.editor.OEEditor.p&quot; name=&quot;dsCust.i&quot; tooltip=&quot;ProgressTrainingPC/src/dsCust.i&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProgressTrainingPC/src/dsCust.i&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.openedge.pdt.text.editor.OEEditor.cls&quot; name=&quot;dialogBox.cls&quot; tooltip=&quot;ProgressTrainingPC/src/dialogBox.cls&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProgressTrainingPC/src/dialogBox.cls&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;protrace.17136&quot; tooltip=&quot;ProgressTrainingPC/protrace.17136&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProgressTrainingPC/protrace.17136&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.openedge.pdt.ve.editor.visualdesigner&quot; name=&quot;Form1.cls&quot; tooltip=&quot;ProgressTrainingPC/src/Form1.cls&quot;>&#xD;&#xA;&lt;persistable path=&quot;/ProgressTrainingPC/src/Form1.cls&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:com.progress.openedge.ui.progressAcceleratorScheme</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_M2LvwfFbEeiapfVCGBh0_Q" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_M2LvwvFbEeiapfVCGBh0_Q" x="0" y="0" width="1024" height="768">
@@ -13,7 +13,7 @@
     <tags>topLevel</tags>
     <tags>shellMaximized</tags>
     <children xsi:type="basic:PartSashContainer" xmi:id="_M2LvwvFbEeiapfVCGBh0_Q" selectedElement="_M2Lvw_FbEeiapfVCGBh0_Q" horizontal="true">
-      <children xsi:type="advanced:PerspectiveStack" xmi:id="_M2Lvw_FbEeiapfVCGBh0_Q" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_M2LvxPFbEeiapfVCGBh0_Q">
+      <children xsi:type="advanced:PerspectiveStack" xmi:id="_M2Lvw_FbEeiapfVCGBh0_Q" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_M2Lv1vFbEeiapfVCGBh0_Q">
         <children xsi:type="advanced:Perspective" xmi:id="_M2LvxPFbEeiapfVCGBh0_Q" elementId="com.openedge.pdt.text.ProgressPerspective" selectedElement="_M2LvxfFbEeiapfVCGBh0_Q" label="OpenEdge Editor" iconURI="platform:/plugin/com.openedge.pdt.text/icons/16/pperspective.gif">
           <persistedState key="persp.hiddenItems" value="persp.hideToolbarSC:org.eclipse.debug.ui.commands.RunToLine,persp.hideToolbarSC:org.eclipse.jdt.ui.actions.OpenProjectWizard,persp.hideToolbarSC:print,persp.hideToolbarSC:org.eclipse.ui.edit.text.toggleShowSelectedElementOnly,"/>
           <tags>persp.actionSet:com.progress.tools.branding.action.sample</tags>
@@ -78,9 +78,10 @@
           <children xsi:type="basic:PartSashContainer" xmi:id="_M2LvxfFbEeiapfVCGBh0_Q" selectedElement="_M2LvzfFbEeiapfVCGBh0_Q" horizontal="true">
             <children xsi:type="basic:PartSashContainer" xmi:id="_M2LvxvFbEeiapfVCGBh0_Q" containerData="2500" selectedElement="_M2Lvx_FbEeiapfVCGBh0_Q">
               <children xsi:type="basic:PartStack" xmi:id="_M2Lvx_FbEeiapfVCGBh0_Q" elementId="left" containerData="5000" selectedElement="_M2LvyPFbEeiapfVCGBh0_Q">
+                <tags>noFocus</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_M2LvyPFbEeiapfVCGBh0_Q" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_M2MXwPFbEeiapfVCGBh0_Q"/>
               </children>
-              <children xsi:type="basic:PartStack" xmi:id="_M2LvyfFbEeiapfVCGBh0_Q" elementId="outline" containerData="5000" selectedElement="_M2LvyvFbEeiapfVCGBh0_Q">
+              <children xsi:type="basic:PartStack" xmi:id="_M2LvyfFbEeiapfVCGBh0_Q" elementId="outline" containerData="5000" selectedElement="_M2LvzPFbEeiapfVCGBh0_Q">
                 <children xsi:type="advanced:Placeholder" xmi:id="_M2LvyvFbEeiapfVCGBh0_Q" elementId="org.eclipse.ui.views.ContentOutline" ref="_M2MYOvFbEeiapfVCGBh0_Q"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_M2Lvy_FbEeiapfVCGBh0_Q" elementId="com.progress.dbnavigator.plugin.views.DBView" ref="_M2MYTPFbEeiapfVCGBh0_Q"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_M2LvzPFbEeiapfVCGBh0_Q" elementId="org.eclipse.ui.views.PropertySheet" ref="_M2MYT_FbEeiapfVCGBh0_Q"/>
@@ -235,6 +236,7 @@
                 </children>
               </children>
               <children xsi:type="basic:PartStack" xmi:id="_M2Lv9_FbEeiapfVCGBh0_Q" elementId="main" containerData="3000" selectedElement="_M2Lv-PFbEeiapfVCGBh0_Q">
+                <tags>noFocus</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_M2Lv-PFbEeiapfVCGBh0_Q" elementId="com.progress.dbnavigator.plugin.views.DBView" ref="_M2MYTPFbEeiapfVCGBh0_Q"/>
               </children>
             </children>
@@ -265,56 +267,34 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_M2MXqfFbEeiapfVCGBh0_Q" elementId="org.eclipse.ui.editorss" selectedElement="_M2MXqvFbEeiapfVCGBh0_Q">
-      <children xsi:type="basic:PartStack" xmi:id="_M2MXqvFbEeiapfVCGBh0_Q" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_M2MXrPFbEeiapfVCGBh0_Q">
+      <children xsi:type="basic:PartStack" xmi:id="_M2MXqvFbEeiapfVCGBh0_Q" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_SHlT4PJLEei3Ib0aH812TA">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>active</tags>
-        <children xsi:type="basic:Part" xmi:id="_M2MXrPFbEeiapfVCGBh0_Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="dsCust.i" iconURI="platform:/plugin/com.openedge.pdt.text/icons/16/p_file.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.openedge.pdt.text.editor.OEEditor.p&quot; name=&quot;dsCust.i&quot; partName=&quot;dsCust.i&quot; title=&quot;dsCust.i&quot; tooltip=&quot;ProgressTrainingPC/src/dsCust.i&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProgressTrainingPC/src/dsCust.i&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1066&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>com.openedge.pdt.text.editor.OEEditor.p</tags>
-          <tags>removeOnHide</tags>
-          <tags>active</tags>
-          <tags>activeOnClose</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_M2MXrfFbEeiapfVCGBh0_Q" elementId="com.openedge.pdt.text.editor.OEEditor.p.context">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:com.openedge.pdt.text.editor.OEEditor.p.context</tags>
-            <tags>popup:com.openedge.pdt.text.editor.OEEditor.p.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_M2MXrvFbEeiapfVCGBh0_Q" elementId="#TextRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#TextRulerContext</tags>
-            <tags>popup:com.openedge.pdt.text.editor.OEEditor.p.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_M2MXr_FbEeiapfVCGBh0_Q" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-        </children>
         <children xsi:type="basic:Part" xmi:id="_cxv_IPFcEeijNrBy-P-lEQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="infoForm.cls (Design)" iconURI="platform:/plugin/com.openedge.pdt.ve/icons/veperspective.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.openedge.pdt.ve.editor.visualdesigner&quot; name=&quot;infoForm.cls&quot; partName=&quot;infoForm.cls (Design)&quot; title=&quot;infoForm.cls (Design)&quot; tooltip=&quot;ProgressTrainingPC/src/infoForm.cls&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProgressTrainingPC/src/infoForm.cls&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>com.openedge.pdt.ve.editor.visualdesigner</tags>
           <tags>removeOnHide</tags>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_fG54oPFcEeijNrBy-P-lEQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="infoForm.cls" iconURI="platform:/plugin/com.openedge.pdt.text/icons/16/cls_file.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.openedge.pdt.text.editor.OEEditor.cls&quot; name=&quot;infoForm.cls&quot; partName=&quot;infoForm.cls&quot; title=&quot;infoForm.cls&quot; tooltip=&quot;ProgressTrainingPC/src/infoForm.cls&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProgressTrainingPC/src/infoForm.cls&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;22025&quot; selectionTopPixel=&quot;750&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_SHlT4PJLEei3Ib0aH812TA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="infoForm.cls" iconURI="platform:/plugin/com.openedge.pdt.text/icons/16/cls_file.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.openedge.pdt.text.editor.OEEditor.cls&quot; name=&quot;infoForm.cls&quot; partName=&quot;infoForm.cls&quot; title=&quot;infoForm.cls&quot; tooltip=&quot;ProgressTrainingPC/src/infoForm.cls&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProgressTrainingPC/src/infoForm.cls&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2196&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>com.openedge.pdt.text.editor.OEEditor.cls</tags>
           <tags>removeOnHide</tags>
+          <tags>active</tags>
+          <tags>activeOnClose</tags>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_JKEXcPFoEeijNrBy-P-lEQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="dsOrder.i" iconURI="platform:/plugin/com.openedge.pdt.text/icons/16/p_file.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.openedge.pdt.text.editor.OEEditor.p&quot; name=&quot;dsOrder.i&quot; partName=&quot;dsOrder.i&quot; title=&quot;dsOrder.i&quot; tooltip=&quot;ProgressTrainingPC/src/dsOrder.i&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProgressTrainingPC/src/dsOrder.i&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;748&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_yUnHsPLdEeikwucYNtwcGg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="editDialog.cls (Design)" iconURI="platform:/plugin/com.openedge.pdt.ve/icons/veperspective.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.openedge.pdt.ve.editor.visualdesigner&quot; name=&quot;editDialog.cls&quot; partName=&quot;editDialog.cls (Design)&quot; title=&quot;editDialog.cls (Design)&quot; tooltip=&quot;ProgressTrainingPC/src/editDialog.cls&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProgressTrainingPC/src/editDialog.cls&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
-          <tags>com.openedge.pdt.text.editor.OEEditor.p</tags>
+          <tags>com.openedge.pdt.ve.editor.visualdesigner</tags>
           <tags>removeOnHide</tags>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_UcRYkPF1EeiogJ2TJ0nQbQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="dsOrderLine.i" iconURI="platform:/plugin/com.openedge.pdt.text/icons/16/p_file.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.openedge.pdt.text.editor.OEEditor.p&quot; name=&quot;dsOrderLine.i&quot; partName=&quot;dsOrderLine.i&quot; title=&quot;dsOrderLine.i&quot; tooltip=&quot;ProgressTrainingPC/src/dsOrderLine.i&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProgressTrainingPC/src/dsOrderLine.i&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;745&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_a3vPwPLsEeikwucYNtwcGg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="editDialog.cls" iconURI="platform:/plugin/com.openedge.pdt.text/icons/16/cls_file.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.openedge.pdt.text.editor.OEEditor.cls&quot; name=&quot;editDialog.cls&quot; partName=&quot;editDialog.cls&quot; title=&quot;editDialog.cls&quot; tooltip=&quot;ProgressTrainingPC/src/editDialog.cls&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ProgressTrainingPC/src/editDialog.cls&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3126&quot; selectionTopPixel=&quot;102&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
-          <tags>com.openedge.pdt.text.editor.OEEditor.p</tags>
+          <tags>com.openedge.pdt.text.editor.OEEditor.cls</tags>
           <tags>removeOnHide</tags>
         </children>
       </children>
@@ -487,11 +467,14 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_M2MYdvFbEeiapfVCGBh0_Q" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_dD4KwPF5EeiSJPXFBj8bhQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_M2ONnvFbEeiapfVCGBh0_Q"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_oncAgPMZEeiio6QFmF_O4w" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_M2ONnvFbEeiapfVCGBh0_Q"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_M2MYg_FbEeiapfVCGBh0_Q" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
         <children xsi:type="menu:ToolBarSeparator" xmi:id="_M2MYhPFbEeiapfVCGBh0_Q" elementId="additions" toBeRendered="false"/>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_qkFBIPINEei3Ib0aH812TA" elementId="org.eclipse.ui.edit.text.actionSet.presentation" visible="false">
+        <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_M2M-PfFbEeiapfVCGBh0_Q" elementId="de.anbos.eclipse.logviewer.plugin.actionset">
         <tags>Draggable</tags>
@@ -508,7 +491,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_M2M-SvFbEeiapfVCGBh0_Q" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_dD5_8fF5EeiSJPXFBj8bhQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_M2ONT_FbEeiapfVCGBh0_Q"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ond1sPMZEeiio6QFmF_O4w" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_M2ONT_FbEeiapfVCGBh0_Q"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_M2M-V_FbEeiapfVCGBh0_Q" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>

@@ -1,0 +1,109 @@
+ /*------------------------------------------------------------------------
+    File        : editDialog
+    Purpose     : 
+    Syntax      : 
+    Description : 
+    Author(s)   : Saulius
+    Created     : Wed Nov 28 09:18:21 EET 2018
+    Notes       : 
+  ----------------------------------------------------------------------*/
+USING Progress.Windows.Form.
+  
+BLOCK-LEVEL ON ERROR UNDO, THROW.
+CLASS editDialog INHERITS Form : 
+
+    DEFINE PRIVATE VARIABLE components AS System.ComponentModel.IContainer NO-UNDO.
+    DEFINE PRIVATE VARIABLE buttonOk AS System.Windows.Forms.Button NO-UNDO.
+    DEFINE PRIVATE VARIABLE buttonCancel AS System.Windows.Forms.Button NO-UNDO.
+    
+    CONSTRUCTOR PUBLIC editDialog( ):
+    
+        SUPER().
+        InitializeComponent ( ).
+        CATCH e AS Progress.Lang.Error:
+            UNDO, THROW e.
+        END CATCH.        
+
+    END CONSTRUCTOR.
+
+    DESTRUCTOR PUBLIC editDialog( ):
+
+        IF VALID-OBJECT(components) THEN DO:
+            CAST(components, System.IDisposable):Dispose().
+        END.
+
+    END DESTRUCTOR.    
+
+    METHOD PRIVATE VOID okButton_Click (sender AS System.Object, e AS System.EventArgs):
+        THIS-OBJECT:DialogResult = System.Windows.Forms.DialogResult:Ok.
+        THIS-OBJECT:Close ( ). 
+    END METHOD.
+
+    METHOD PRIVATE VOID cancelButton_Click (sender AS System.Object, e AS System.EventArgs):
+        THIS-OBJECT:DialogResult = System.Windows.Forms.DialogResult:Cancel.
+        THIS-OBJECT:Close ( ).
+    END METHOD.
+    
+    METHOD PRIVATE VOID InitializeComponent ( ):
+
+        /* NOTE: The following method is automatically generated.
+           
+           We strongly suggest that the contents of this method only be modified using the 
+           Visual Designer to avoid any incompatible modifications.
+           
+           Modifying the contents of this method using a code editor will invalidate any support for this file. */
+        
+        buttonOk = NEW System.Windows.Forms.Button ( ).
+        buttonCancel = NEW System.Windows.Forms.Button ( ).
+        THIS-OBJECT:SuspendLayout ( ).
+         /* */
+         /* buttonOk */
+         /* */
+        buttonOk:Location = NEW System.Drawing.Point (121, 231).
+        buttonOk:Name = "buttonOk".
+        buttonOk:Size = NEW System.Drawing.Size (75, 23).
+        buttonOk:TabIndex = 0.
+        buttonOk:Text = "OK".
+        buttonOk:Anchor = CAST(Progress.Util.EnumHelper:Or(System.Windows.Forms.AnchorStyles:Bottom, System.Windows.Forms.AnchorStyles:Right), System.Windows.Forms.AnchorStyles).
+        buttonOk:Click:Subscribe (okButton_Click).
+         /* */
+         /* buttonCancel */
+         /* */
+        buttonCancel:DialogResult = System.Windows.Forms.DialogResult:Cancel.
+        buttonCancel:Location = NEW System.Drawing.Point (205, 231).
+        buttonCancel:Name = "buttonCancel".
+        buttonCancel:Size = NEW System.Drawing.Size (75, 23).
+        buttonCancel:TabIndex = 1.
+        buttonCancel:Text = "Cancel".
+        buttonCancel:Anchor = CAST(Progress.Util.EnumHelper:Or(System.Windows.Forms.AnchorStyles:Bottom, System.Windows.Forms.AnchorStyles:Right), System.Windows.Forms.AnchorStyles).        
+        buttonCancel:Click:Subscribe(cancelButton_Click).
+         /* */
+         /* THIS-OBJECT */
+         /* */
+        THIS-OBJECT:AcceptButton = buttonOk.
+        THIS-OBJECT:CancelButton = buttonCancel.
+        THIS-OBJECT:ClientSize = NEW System.Drawing.Size (294, 268).
+        THIS-OBJECT:Controls:Add (buttonCancel).
+        THIS-OBJECT:Controls:Add (buttonOk).
+        THIS-OBJECT:FormBorderStyle = System.Windows.Forms.FormBorderStyle:FixedDialog.
+        THIS-OBJECT:MaximizeBox = FALSE.
+        THIS-OBJECT:MinimizeBox = FALSE.
+        THIS-OBJECT:Name = "editDialog".
+        THIS-OBJECT:ShowInTaskbar = FALSE.
+        THIS-OBJECT:StartPosition = System.Windows.Forms.FormStartPosition:CenterParent.
+        THIS-OBJECT:Text = "editDialog".
+        THIS-OBJECT:ResumeLayout (FALSE).
+        CATCH e AS Progress.Lang.Error:
+            UNDO, THROW e.
+        END CATCH.        
+    END METHOD. 
+ 
+    METHOD PUBLIC VOID ShowModalDialog(  ):
+        
+        WAIT-FOR THIS-OBJECT:ShowDialog().
+
+    END METHOD.
+
+
+ 
+END CLASS.

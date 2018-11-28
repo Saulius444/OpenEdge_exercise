@@ -1,10 +1,11 @@
 <?xml version="1.0" ?>
-<libraryinfo path="C:/Users/Saulius/Desktop/workspace/ProgressTrainingPC/src" type="PathEntry" ModificationStamp="1543243435163" FullName="src" lib_header_magic_number="2384638594569" lib_header_version="15">
+<libraryinfo path="C:/Users/Saulius/Desktop/workspace/ProgressTrainingPC/src" type="PathEntry" ModificationStamp="1543415048344" FullName="src" lib_header_magic_number="2384638594569" lib_header_version="15">
 	<procedures>
 	</procedures>
 	<classes>
 		<pacakage name="">
 			<class name="infoForm" SourceFilePath="C:/Users/Saulius/Desktop/workspace/ProgressTrainingPC/src/infoForm.cls" RfilePath="C:/Users/Saulius/Desktop/workspace/ProgressTrainingPC/bin/infoForm.r" Abstract="false" Final="false" isInterface="false" isSerializable="false" SuperClassName="Progress.Windows.Form" InterfaceNames="" ImportedPackages=""></class>
+			<class name="editDialog" SourceFilePath="C:/Users/Saulius/Desktop/workspace/ProgressTrainingPC/src/editDialog.cls" RfilePath="C:/Users/Saulius/Desktop/workspace/ProgressTrainingPC/bin/editDialog.r" Abstract="false" Final="false" isInterface="false" isSerializable="false" SuperClassName="Progress.Windows.Form" InterfaceNames="" ImportedPackages=""></class>
 		</pacakage>
 	</classes>
 </libraryinfo>

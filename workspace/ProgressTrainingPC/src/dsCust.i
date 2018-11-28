@@ -19,14 +19,8 @@
 DEFINE TEMP-TABLE ttCust NO-UNDO
 
 FIELD CustNum     AS INTEGER   LABEL "Num"
-FIELD Name        AS CHARACTER LABEL "Name"
-FIELD Contact     AS CHARACTER LABEL "Contact"
-FIELD Address     AS CHARACTER LABEL "Address"
-FIELD City        AS CHARACTER LABEL "City"
-FIELD State       AS CHARACTER LABEL "State"
-FIELD Country     AS CHARACTER LABEL "Country"
-FIELD CreditLimit AS DECIMAL   LABEL "Credit Limit"
-
-INDEX CustNumIdx  IS UNIQUE PRIMARY CustNum.
+FIELD Name        AS CHARACTER LABEL "Name".
 
 DEFINE DATASET dsCust FOR ttCust.
+
+
